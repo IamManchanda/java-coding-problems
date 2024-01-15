@@ -4,10 +4,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        /**
-         * Problem: Print the largest of two numbers.
-         */
-
         // Input
         System.out.println("Enter the first number: ");
         int a = sc.nextInt();

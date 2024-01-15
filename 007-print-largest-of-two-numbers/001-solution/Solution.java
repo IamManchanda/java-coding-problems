@@ -3,7 +3,11 @@
  */
 
 public class Solution {
-    public int largestOfTwoNumbers(int a, int b) {
+    public int largestOfTwoNumbers(int a, int b) throws IllegalArgumentException {
+        if (a == b) {
+            throw new IllegalArgumentException("The numbers are equal.");
+        }
+
         if (a > b) {
             return a;
         }
@@ -21,4 +25,15 @@ public class Solution {
  * 
  * The largest of "a: 12" and "b: 14" is:
  * 14
+ */
+
+/*
+ * Enter the first number:
+ * 10
+ * 
+ * Enter the second number:
+ * 7
+ * 
+ * The largest of "a: 10" and "b: 7" is:
+ * 10
  */
