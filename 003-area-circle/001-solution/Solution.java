@@ -1,11 +1,13 @@
 /**
  * Problem: Calculate the area of a circle.
  */
+
 public class Solution {
     public double calculateAreaCircle(float radius) {
         return Math.PI * radius * radius;
     }
 }
+
 /*
  * Enter the radius:
  * 12.34

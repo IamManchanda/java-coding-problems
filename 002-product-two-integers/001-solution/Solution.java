@@ -1,11 +1,13 @@
 /**
  * Problem: Calculate product of two integers
  */
+
 public class Solution {
     public int calculateProduct(int a, int b) {
         return a * b;
     }
 }
+
 /*
  * Enter the first number:
  * 20

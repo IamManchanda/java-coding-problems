@@ -1,11 +1,13 @@
 /**
  * Problem: Calculate sum of two integers
  */
+
 public class Solution {
     public int calculateSum(int a, int b) {
         return a + b;
     }
 }
+
 /*
  * Enter the first number:
  * 10

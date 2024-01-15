@@ -1,11 +1,13 @@
 /**
  * Problem: Calculate the average of 3 numbers.
  */
+
 public class Solution {
     public int calculateAverage(int a, int b, int c) {
         return (a + b + c) / 3;
     }
 }
+
 /*
  * Enter the first number:
  * 23
