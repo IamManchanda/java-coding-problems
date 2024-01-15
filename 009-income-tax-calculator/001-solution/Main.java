@@ -16,7 +16,7 @@ public class Main {
         Solution solution = new Solution();
         double incomeTax = solution.calculateIncomeTax(income, regime);
 
-        // Output - Main Problem
+        // Output
         System.out.println();
         System.out.println("Income tax: for income \"Rs. " + income + "\" and regime \"" + regime + "\" is:");
         System.out.println(incomeTax);

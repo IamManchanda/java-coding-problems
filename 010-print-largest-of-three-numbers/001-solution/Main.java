@@ -20,7 +20,7 @@ public class Main {
         Solution solution = new Solution();
         int largest = solution.largestOfThreeNumbers(a, b, c);
 
-        // Output - Main Problem
+        // Output
         System.out.println();
         System.out.println("Largest of the three numbers:");
         System.out.println(largest);

@@ -12,7 +12,7 @@ public class Main {
         Solution solution = new Solution();
         boolean result = solution.isLeapYear(year);
 
-        // Output - Main Problem
+        // Output
         System.out.println();
         System.out.println("Result: ");
         if (result == true) {

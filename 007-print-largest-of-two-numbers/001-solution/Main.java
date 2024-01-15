@@ -16,7 +16,7 @@ public class Main {
         Solution solution = new Solution();
         int largest = solution.largestOfTwoNumbers(a, b);
 
-        // Output - Main Problem
+        // Output
         System.out.println();
         System.out.println("The largest of \"a: " + a + "\" and \"b: " + b + "\" is: ");
         System.out.println(largest);

@@ -21,7 +21,7 @@ public class Main {
         float total = solution.calculateBill(pencilPrice, penPrice, eraserPrice);
         float totalWithGst = solution.calculateBillWithGst(total);
 
-        // Output - Main Problem
+        // Output
         System.out.println();
         System.out.println("Total bill:");
         System.out.println(total);

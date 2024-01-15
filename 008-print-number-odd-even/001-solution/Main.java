@@ -12,7 +12,7 @@ public class Main {
         Solution solution = new Solution();
         String result = solution.printNumberOddEven(number);
 
-        // Output - Main Problem
+        // Output
         System.out.println();
         System.out.println("The number " + number + " is:");
         System.out.println(result);

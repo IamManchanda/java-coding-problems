@@ -20,7 +20,7 @@ public class Main {
         Solution solution = new Solution();
         float result = solution.calculate(a, b, op);
 
-        // Output - Main Problem
+        // Output
         System.out.println();
         System.out.println("Result: ");
         System.out.println(result);
