@@ -14,7 +14,7 @@ public class Main {
 
         // Solution
         Solution solution = new Solution();
-        int product = solution.getProduct(a, b);
+        int product = solution.calculateProduct(a, b);
 
         // Output
         System.out.println();

@@ -10,7 +10,7 @@ public class Main {
 
         // Solution
         Solution solution = new Solution();
-        double areaCircle = solution.getAreaCircle(radius);
+        double areaCircle = solution.calculateAreaCircle(radius);
 
         // Output
         System.out.println();

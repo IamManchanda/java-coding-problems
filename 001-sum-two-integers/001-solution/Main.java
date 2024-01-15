@@ -14,7 +14,7 @@ public class Main {
 
         // Solution
         Solution solution = new Solution();
-        int sum = solution.getSum(a, b);
+        int sum = solution.calculateSum(a, b);
 
         // Output
         System.out.println();
