@@ -23,9 +23,11 @@ public class Main {
 
         // Output - Main Problem
         System.out.println();
-        System.out.println("Total bill: " + total);
+        System.out.println("Total bill:");
+        System.out.println(total);
         System.out.println();
-        System.out.println("Total bill with GST: " + totalWithGst);
+        System.out.println("Total bill with GST:");
+        System.out.println(totalWithGst);
 
         sc.close();
     }

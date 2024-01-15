@@ -6,10 +6,7 @@
  */
 
 public class Solution {
-    public float calculateBill(
-            float pencilPrice,
-            float penPrice,
-            float eraserPrice) {
+    public float calculateBill(float pencilPrice, float penPrice, float eraserPrice) {
         return pencilPrice + penPrice + eraserPrice;
     }
 
@@ -20,15 +17,17 @@ public class Solution {
 
 /*
  * Enter the price of pencil:
- * 10
- * 
- * Enter the price of pen:
  * 20
  * 
- * Enter the price of eraser:
+ * Enter the price of pen:
  * 10
  * 
- * Total bill: 40.0
+ * Enter the price of eraser:
+ * 12
  * 
- * Total bill with GST: 47.2
+ * Total bill:
+ * 42.0
+ * 
+ * Total bill with GST:
+ * 49.56
  */
