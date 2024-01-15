@@ -6,7 +6,7 @@ public class Main {
 
         // Input
         System.out.println("Enter the income: ");
-        int income = sc.nextInt();
+        float income = sc.nextFloat();
 
         System.out.println();
         System.out.println("Enter the regime: ");
