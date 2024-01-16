@@ -1,5 +1,5 @@
 /**
- * Problem: Print Half Pyramid.
+ * Problem: Print Half Pyramid pattern.
  */
 
 public class Solution {
