@@ -12,7 +12,7 @@ public class Main {
         Solution solution = new Solution();
         System.out.println();
         System.out.println("Result: ");
-        solution.printHalfPyramid(lines);
+        solution.printHalfPyramidPattern(lines);
 
         sc.close();
     }

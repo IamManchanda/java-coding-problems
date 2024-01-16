@@ -3,7 +3,7 @@
  */
 
 public class Solution {
-    public void printHalfPyramid(int lines) {
+    public void printHalfPyramidPattern(int lines) {
         for (int row = 1; row <= lines; row++) {
             for (int col = 1; col <= row; col++) {
                 System.out.print(col);
