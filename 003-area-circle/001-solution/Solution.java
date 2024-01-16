@@ -4,7 +4,7 @@
 
 public class Solution {
     public double calculateAreaCircle(float radius) {
-        return Math.PI * radius * radius;
+        return Math.PI * Math.pow(radius, 2);
     }
 }
 
