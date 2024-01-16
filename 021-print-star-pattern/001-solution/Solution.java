@@ -3,8 +3,8 @@
  */
 
 public class Solution {
-    public void printStarPattern(int n) {
-        for (int i = 1; i <= n; i++) {
+    public void printStarPattern(int lines) {
+        for (int i = 1; i <= lines; i++) {
             for (int star = 1; star <= i; star++) {
                 System.out.print("*");
             }
