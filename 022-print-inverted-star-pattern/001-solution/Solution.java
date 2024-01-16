@@ -1,11 +1,11 @@
 /**
- * Problem: Print star pattern.
+ * Problem: Print Inverted star pattern.
  */
 
 public class Solution {
-    public void printStarPattern(int lines) {
+    public void printInvertedStarPattern(int lines) {
         for (int row = 1; row <= lines; row++) {
-            for (int col = 1; col <= row; col++) {
+            for (int col = 1; col <= lines - row + 1; col++) {
                 System.out.print("*");
             }
             System.out.println();
@@ -14,14 +14,14 @@ public class Solution {
 }
 
 /*
- * Enter number:
+ * Enter number of lines:
  * 6
  * 
  * Result:
- * *
- * **
- * ***
- * ****
- * *****
  * ******
+ * *****
+ * ****
+ * ***
+ * **
+ * *
  */
