@@ -1,7 +1,7 @@
 import java.util.*;
 
 /**
- * Problem: Sum of even and odd for n natural numbers.
+ * Problem: Sum of even and odd till n natural numbers.
  */
 
 public class Solution {
