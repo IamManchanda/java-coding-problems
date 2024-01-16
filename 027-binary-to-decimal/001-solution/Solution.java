@@ -9,7 +9,7 @@ public class Solution {
 
         while (n != 0) {
             int lastDigit = n % 10;
-            decimal += lastDigit * Math.pow(2, power);
+            decimal += lastDigit * (int) Math.pow(2, power);
             power++;
             n /= 10;
         }
@@ -17,3 +17,11 @@ public class Solution {
         return decimal;
     }
 }
+
+/*
+ * Enter binary number:
+ * 10110
+ * 
+ * Result:
+ * Binary number 10110 in decimal is: 22
+ */
