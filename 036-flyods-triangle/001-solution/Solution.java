@@ -4,11 +4,11 @@
 
 public class Solution {
     public void printFloydsTriangle(int lines) {
-        int num = 1;
+        int counter = 1;
         for (int row = 1; row <= lines; row++) {
             for (int col = 1; col <= row; col++) {
-                System.out.print(num + " ");
-                num++;
+                System.out.print(counter + " ");
+                counter++;
             }
 
             System.out.println();
