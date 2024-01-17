@@ -11,3 +11,19 @@ public class Solution {
         return false;
     }
 }
+
+/*
+ * Enter the integer:
+ * 10
+ * 
+ * Result:
+ * 10 is even.
+ */
+
+/*
+ * Enter the integer:
+ * 11
+ * 
+ * Result:
+ * 11 is not even.
+ */
