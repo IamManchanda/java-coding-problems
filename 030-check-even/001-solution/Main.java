@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input
+        System.out.println("Enter the integer: ");
+        int n = sc.nextInt();
+
+        // Solution
+        Solution solution = new Solution();
+        boolean result = solution.checkEven(n);
+
+        // Output
+        System.out.println();
+        System.out.println("Result:");
+        if (result) {
+            System.out.println(n + " is even.");
+        } else {
+            System.out.println(n + " is not even.");
+        }
+
+        sc.close();
+    }
+}
