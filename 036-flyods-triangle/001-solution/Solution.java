@@ -1,5 +1,5 @@
 /**
- * Problem: Print a floyd's triangle pattern.
+ * Problem: Print the floyd's triangle pattern.
  */
 
 public class Solution {
