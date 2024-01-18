@@ -12,7 +12,7 @@ public class Solution {
         for (int i = 0; i < n; i++) {
             int start = i;
 
-            for (int j = i; j < n; j++) {
+            for (int j = start; j < n; j++) {
                 int end = j;
                 results[resultsIndex] = "[";
 
