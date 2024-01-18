@@ -16,6 +16,18 @@ public class Main {
             numbers[i] = sc.nextInt();
         }
 
+        System.out.println();
+        System.out.println("Enter the sorting order (1 for ASC, 2 for DESC): ");
+        int order = sc.nextInt();
+        if (order != 1 && order != 2) {
+            System.out.println();
+            System.out.println("Invalid order. Defaulting to ascending order.");
+            order = 1;
+        }
+        System.out.println();
+        System.out.println("Sorting order: " + (order == 1 ? "ASC" : "DESC"));
+        boolean isDescending = order == 2;
+
         // Input Log before solution is applied
         System.out.println();
         System.out.println("Original Input (as an array):");
@@ -23,7 +35,7 @@ public class Main {
 
         // Solution
         Solution solution = new Solution();
-        int[] result = solution.bubbleSort(numbers);
+        int[] result = solution.bubbleSort(numbers, isDescending);
 
         System.out.println();
         System.out.println("Result (as an array):");
