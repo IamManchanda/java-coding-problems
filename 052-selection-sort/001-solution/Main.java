@@ -26,7 +26,7 @@ public class Main {
         }
         System.out.println();
         System.out.println("Sorting order: " + (order == 1 ? "ASC" : "DESC"));
-        String sortingOrder = order == 1 ? "ASC" : "DESC";
+        boolean isDescending = order == 2;
 
         // Input Log before solution is applied
         System.out.println();
@@ -35,7 +35,7 @@ public class Main {
 
         // Solution
         Solution solution = new Solution();
-        int[] result = solution.selectionSort(numbers, sortingOrder);
+        int[] result = solution.selectionSort(numbers, isDescending);
 
         System.out.println();
         System.out.println("Result (as an array):");

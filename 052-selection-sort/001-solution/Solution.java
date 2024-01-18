@@ -6,19 +6,19 @@
  */
 
 public class Solution {
-    public int[] selectionSort(int[] numbers, String sortingOrder) {
+    public int[] selectionSort(int[] numbers, boolean isDescending) {
         int n = numbers.length;
 
         for (int i = 0; i <= n - 2; i++) {
             int minPos = i;
 
             for (int j = i + 1; j <= n - 1; j++) {
-                if (sortingOrder.equals("ASC")) {
-                    if (numbers[minPos] > numbers[j]) {
+                if (isDescending) {
+                    if (numbers[minPos] < numbers[j]) {
                         minPos = j;
                     }
-                } else { // sortingOrder.equals("DESC")
-                    if (numbers[minPos] < numbers[j]) {
+                } else {
+                    if (numbers[minPos] > numbers[j]) {
                         minPos = j;
                     }
                 }
