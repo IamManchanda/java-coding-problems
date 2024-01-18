@@ -4,7 +4,7 @@
 
 public class Solution {
     public String[] pairsArray(int[] numbers) {
-        int resultsSize = binomialCoefficient(numbers.length, 2);
+        int resultsSize = getPairsCount(numbers.length);
         String[] results = new String[resultsSize];
         int resultsIndex = 0;
 
@@ -21,18 +21,8 @@ public class Solution {
         return results;
     }
 
-    private int binomialCoefficient(int n, int k) {
-        return factorial(n) / (factorial(k) * factorial(n - k));
-    }
-
-    private int factorial(int number) {
-        int fact = 1;
-
-        for (int i = 1; i <= number; i++) {
-            fact *= i;
-        }
-
-        return fact;
+    private int getPairsCount(int n) {
+        return n * (n - 1) / 2;
     }
 }
 
