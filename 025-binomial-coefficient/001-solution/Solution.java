@@ -7,7 +7,7 @@ public class Solution {
         return factorial(n) / (factorial(k) * factorial(n - k));
     }
 
-    public int factorial(int number) {
+    private int factorial(int number) {
         int fact = 1;
 
         for (int i = 1; i <= number; i++) {
