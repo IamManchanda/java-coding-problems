@@ -1,6 +1,9 @@
 /**
  * Problem: Best time to buy and sell stocks
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock/submissions/1149868473/
+ * 
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
  */
 
 public class Solution {
