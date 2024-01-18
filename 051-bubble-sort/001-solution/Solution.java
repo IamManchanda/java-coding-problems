@@ -8,12 +8,19 @@
 public class Solution {
     public int[] bubbleSort(int[] numbers) {
         int n = numbers.length;
+        boolean swapped;
 
         for (int i = 0; i <= n - 2; i++) {
+            swapped = false;
             for (int j = 0; j <= n - 2 - i; j++) {
                 if (numbers[j] > numbers[j + 1]) {
                     swap(numbers, j, j + 1);
+                    swapped = true;
                 }
+            }
+
+            if (!swapped) {
+                break;
             }
         }
 
