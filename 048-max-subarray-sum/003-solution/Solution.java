@@ -7,15 +7,15 @@
 
 public class Solution {
     public int maxSubarraySum(int[] numbers) {
-        int currentSum = 0;
-        int maxSum = Integer.MIN_VALUE;
+        int maxSumTillHere = numbers[0];
+        int maxSumSoFar = numbers[0];
 
-        for (int i = 0; i < numbers.length; i++) {
-            currentSum = Math.max(numbers[i], currentSum + numbers[i]);
-            maxSum = Math.max(maxSum, currentSum);
+        for (int i = 1; i < numbers.length; i++) {
+            maxSumTillHere = Math.max(numbers[i], maxSumTillHere + numbers[i]);
+            maxSumSoFar = Math.max(maxSumSoFar, maxSumTillHere);
         }
 
-        return maxSum;
+        return maxSumSoFar;
     }
 }
 
