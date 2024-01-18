@@ -26,6 +26,7 @@ public class Main {
         int[] reversedNumbers = solution.reverseArray(numbers);
 
         // Output
+        System.out.println();
         System.out.println("Reversed Array:");
         System.out.println(Arrays.toString(reversedNumbers));
 

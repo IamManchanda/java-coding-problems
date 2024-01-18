@@ -39,6 +39,7 @@ public class Solution {
  * 
  * Original Array:
  * [4, 5, 3, 2, 8, 9, 7, 10, 1, 6]
+ * 
  * Reversed Array:
  * [6, 1, 10, 7, 9, 8, 2, 3, 5, 4]
  */
