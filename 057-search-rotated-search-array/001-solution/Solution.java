@@ -13,13 +13,13 @@ public class Solution {
         int min = minSearch(nums, n);
 
         if (nums[min] <= target && target <= nums[n - 1]) {
-            return search(nums, target, min, n - 1);
+            return binarySearch(nums, target, min, n - 1);
         }
 
-        return search(nums, target, 0, min);
+        return binarySearch(nums, target, 0, min);
     }
 
-    private int search(int[] nums, int target, int left, int right) {
+    private int binarySearch(int[] nums, int target, int left, int right) {
         int l = left;
         int r = right;
 
@@ -28,10 +28,10 @@ public class Solution {
 
             if (nums[mid] == target) {
                 return mid;
-            } else if (nums[mid] > target) {
-                r = mid - 1;
-            } else {
+            } else if (nums[mid] < target) {
                 l = mid + 1;
+            } else { // nums[mid] > target
+                r = mid - 1;
             }
         }
 
