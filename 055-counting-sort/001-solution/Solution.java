@@ -17,10 +17,6 @@ public class Solution {
         }
 
         int offset = -smallest;
-        if (offset < 0) {
-            offset = 0; // to avoid negative offset
-        }
-
         int[] frequency = new int[largest + offset + 1];
 
         for (int i = 0; i <= n - 1; i++) {
@@ -28,16 +24,13 @@ public class Solution {
         }
 
         int fn = frequency.length;
-        if (isDescending) {
-            int counterDesc = 0;
-            for (int i = fn - 1; i >= 0; i--) {
-                counterDesc = fillNumbers(numbers, frequency, i, counterDesc, offset);
-            }
-        } else {
-            int counterAsc = 0;
-            for (int i = 0; i <= fn - 1; i++) {
-                counterAsc = fillNumbers(numbers, frequency, i, counterAsc, offset);
-            }
+        int counter = 0;
+        int start = isDescending ? fn - 1 : 0;
+        int end = isDescending ? -1 : fn;
+        int step = isDescending ? -1 : 1;
+
+        for (int i = start; i != end; i += step) {
+            counter = fillNumbers(numbers, frequency, i, counter, offset);
         }
 
         return numbers;
@@ -45,8 +38,7 @@ public class Solution {
 
     private int fillNumbers(int[] numbers, int[] frequency, int index, int counter, int offset) {
         while (frequency[index] > 0) {
-            numbers[counter] = index - offset;
-            counter++;
+            numbers[counter++] = index - offset;
             frequency[index]--;
         }
 
