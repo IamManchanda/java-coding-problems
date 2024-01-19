@@ -1,6 +1,6 @@
 /**
  * Problem: Trapping rain water
- * https://leetcode.com/problems/trapping-rain-water/submissions/1149824417/
+ * https://leetcode.com/problems/trapping-rain-water/description/
  * 
  * Time complexity: O(n)
  * Space complexity: O(n)

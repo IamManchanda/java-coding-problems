@@ -2,7 +2,7 @@ import java.util.*;
 
 /**
  * Contains Duplicate
- * https://leetcode.com/problems/contains-duplicate/submissions/1150629492/
+ * https://leetcode.com/problems/contains-duplicate/description/
  * 
  * Approach: Using Sets
  * - Time complexity: O(n)
