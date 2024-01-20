@@ -25,7 +25,7 @@ public class Main {
 
         // Input Log before solution is applied
         System.out.println();
-        System.out.println("Original Input (as an array):");
+        System.out.println("Original Input (as a 2d array):");
         System.out.println(Arrays.deepToString(matrix));
 
         // Solution & Output

@@ -38,7 +38,7 @@ public class Solution {
  * Enter item 2: 8
  * Enter item 3: 9
  * 
- * Original Input (as an array):
+ * Original Input (as a 2d array):
  * [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
  * 
  * Result (as a matrix):
