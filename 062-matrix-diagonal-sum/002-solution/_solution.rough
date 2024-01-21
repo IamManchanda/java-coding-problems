@@ -1,4 +1,4 @@
-function (int) diagonalSum(int[][] mat)
+function (int) diagonalSum(int[][] mat) {
     int sum = 0 // init
     
     // square matrix as per problem statement
@@ -17,3 +17,4 @@ function (int) diagonalSum(int[][] mat)
             sum += mat[i][n - 1 - i]
 
     return sum
+}
