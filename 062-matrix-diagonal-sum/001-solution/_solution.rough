@@ -5,11 +5,13 @@ function (int) diagonalSum(int[][] mat)
     // so n = m = mat.length = mat[0].length
     int n = mat.length 
 
-    for i to n
-        for j to n
+    for i to n - 1
+        for j to n - 1
             if i == j
+                // primary diagonal
                 sum += mat[i][j]
             else if i + j == n - 1
+                // secondary diagonal
                 sum += mat[i][j]
 
     return sum

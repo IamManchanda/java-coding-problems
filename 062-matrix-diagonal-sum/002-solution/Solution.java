@@ -1,10 +1,9 @@
 /**
  * Matrix Diagonal Sum
  * https://leetcode.com/problems/matrix-diagonal-sum/description/
- * (Not submitted as it's a brute force solution)
  * 
- * Approach: Brute Force
- * - Time Complexity: O(n^2)
+ * Approach: Linear Scan (Optimized)
+ * - Time Complexity: O(n)
  * - Space Complexity: O(1)
  */
 
@@ -14,12 +13,10 @@ public class Solution {
         int n = mat.length;
 
         for (int i = 0; i <= n - 1; i++) {
-            for (int j = 0; j <= n - 1; j++) {
-                if (i == j) {
-                    sum += mat[i][j];
-                } else if (i + j == n - 1) {
-                    sum += mat[i][j];
-                }
+            sum += mat[i][i];
+
+            if (i != n - 1 - i) {
+                sum += mat[i][n - 1 - i];
             }
         }
 
