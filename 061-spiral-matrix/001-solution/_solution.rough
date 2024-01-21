@@ -1,0 +1,39 @@
+function spiralOrder(int[][] matrix)
+  List result = [] // array list
+  int x = matrix.length // total row items
+  int y = matrix[0].length // total column items
+  int si = 0 // start row index
+  int ei = x-1 // end row index
+  int sj = 0 // start column index
+  int ej = y-1 // end column index
+
+  // Traverse matrix in spiral order
+  while si <= ei && sj <= ej
+    // left to right
+    for j = sj to ej
+      result.add(matrix[si][j])
+    
+    // top to bottom
+    for i = si+1 to ei
+      result.add(matrix[i][ej])
+    
+    // right to left
+    for j = ej-1 to sj
+      if si == ei // if only one row left
+        break
+
+      result.add(matrix[ei][j])
+    
+    // bottom to top
+    for i = ei-1 to si+1
+      if sj == ej // if only one column left
+        break
+
+      result.add(matrix[i][sj])
+    
+    si++
+    ei--
+    sj++
+    ej--
+
+  return result
