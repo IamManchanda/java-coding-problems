@@ -1,4 +1,4 @@
-function spiralOrder(int[][] matrix)
+function (List) spiralOrder(int[][] matrix)
   List result = [] // array list
   int x = matrix.length // total row items
   int y = matrix[0].length // total column items
