@@ -1,9 +1,17 @@
 /**
- * Problem: Check if a number is palindrome or not.
+ * Problem: Palindrome Number
+ * https://leetcode.com/problems/palindrome-number/description/
+ * 
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
  */
 
 public class Solution {
     public boolean isPalindrome(int number) {
+        if (number < 0) {
+            return false;
+        }
+
         int reverse = getReverse(number);
 
         if (number == reverse) {
@@ -29,16 +37,24 @@ public class Solution {
 
 /*
  * Enter the integer:
- * 11122111
+ * 121
  * 
  * Result:
- * 11122111 is palindrome.
+ * true
  */
 
 /*
  * Enter the integer:
- * 12456
+ * -121
  * 
  * Result:
- * 12456 is not palindrome.
+ * false
+ */
+
+/*
+ * Enter the integer:
+ * 10
+ * 
+ * Result:
+ * false
  */

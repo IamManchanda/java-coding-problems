@@ -15,11 +15,7 @@ public class Main {
         // Output
         System.out.println();
         System.out.println("Result:");
-        if (result) {
-            System.out.println(number + " is palindrome.");
-        } else {
-            System.out.println(number + " is not palindrome.");
-        }
+        System.out.println(result);
         sc.close();
     }
 }
