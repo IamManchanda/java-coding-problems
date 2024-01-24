@@ -8,5 +8,8 @@ public class Main {
 
         int binXor = 5 ^ 6;
         System.out.println("5 ^ 6 = " + binXor); // 3
+
+        int binNot = ~5;
+        System.out.println("~5 = " + binNot); // -6
     }
 }
