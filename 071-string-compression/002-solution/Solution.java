@@ -8,13 +8,13 @@
 
 public class Solution {
     public int compress(char[] chars) {
-        int i = 0, ci = 0;
+        int i = 0, ci = 0, n = chars.length;
 
-        while (i < chars.length) {
+        while (i <= n - 1) {
             char currentChar = chars[i];
             int count = 0;
 
-            while (i < chars.length && chars[i] == currentChar) {
+            while (i <= n - 1 && chars[i] == currentChar) {
                 count++;
                 i++;
             }
