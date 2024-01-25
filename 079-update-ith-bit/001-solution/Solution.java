@@ -1,5 +1,5 @@
 /**
- * Clear the ith bit of a given number.
+ * Update the ith bit of a given number.
  */
 
 public class Solution {
