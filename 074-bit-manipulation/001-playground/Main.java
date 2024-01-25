@@ -15,5 +15,9 @@ public class Main {
         int binLeftShift = 5 << 2;
         System.out.println("5 << 2 = " + binLeftShift); // 20
         // Tip: a << b = a * 2^b
+
+        int binRightShift = 5 >> 2;
+        System.out.println("5 >> 2 = " + binRightShift); // 1
+        // Tip: a >> b = a / 2^b
     }
 }
