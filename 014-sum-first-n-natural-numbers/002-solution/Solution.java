@@ -1,19 +1,15 @@
 /**
  * Problem: Sum of first n natural numbers.
- * Approach: Iterative.
+ * Approach: Recursive.
  */
 
 public class Solution {
     public int sumFirstNNaturalNumbers(int n) {
-        int sum = 0;
-        int i = 1;
-
-        while (i <= n) {
-            sum += i;
-            i++;
+        if (n == 1) {
+            return 1;
         }
 
-        return sum;
+        return n + sumFirstNNaturalNumbers(n - 1);
     }
 }
 
