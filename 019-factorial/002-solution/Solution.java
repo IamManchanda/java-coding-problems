@@ -1,5 +1,6 @@
 /**
  * Problem: Find the factorial of the number.
+ * Approach: Use recursive approach.
  */
 
 public class Solution {
