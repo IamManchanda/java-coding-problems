@@ -13,9 +13,8 @@ public class Solution {
             int minPos = i;
 
             for (int j = i + 1; j <= n - 1; j++) {
-                if (isDescending && numbers[minPos] < numbers[j]) {
-                    minPos = j;
-                } else if (!isDescending && numbers[minPos] > numbers[j]) {
+                if ((isDescending && numbers[minPos] < numbers[j])
+                        || (!isDescending && numbers[minPos] > numbers[j])) {
                     minPos = j;
                 }
             }

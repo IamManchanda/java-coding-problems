@@ -14,9 +14,8 @@ public class Solution {
             swapped = false;
 
             for (int j = 0; j <= n - 2 - i; j++) {
-                if (isDescending && numbers[j] < numbers[j + 1]) {
-                    swapped = swap(numbers, j, j + 1);
-                } else if (!isDescending && numbers[j] > numbers[j + 1]) {
+                if ((isDescending && numbers[j] < numbers[j + 1])
+                        || (!isDescending && numbers[j] > numbers[j + 1])) {
                     swapped = swap(numbers, j, j + 1);
                 }
             }
