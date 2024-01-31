@@ -1,20 +1,22 @@
 /**
- * Fast Exponentiation
+ * Pow(x, n)
+ * https://leetcode.com/problems/powx-n/description/
+ * (Not submitted as not exactly the same problem due to diff types of input)
  * 
  * - Time Complexity: O(log n)
  * - Space Complexity: O(1)
  */
 
 public class Solution {
-    public int fastExpo(int a, int n) {
+    public int myPow(int x, int n) {
         int ans = 1;
 
         while (n > 0) {
             if ((n & 1) == 1) {
-                ans *= a;
+                ans *= x;
             }
 
-            a *= a;
+            x *= x;
             n >>= 1;
         }
 
@@ -23,7 +25,7 @@ public class Solution {
 }
 
 /*
- * Enter `a`:
+ * Enter `x`:
  * 3
  * 
  * Enter `n`:
@@ -34,7 +36,7 @@ public class Solution {
  */
 
 /*
- * Enter `a`:
+ * Enter `x`:
  * 5
  * 
  * Enter `n`:

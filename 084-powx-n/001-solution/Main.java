@@ -5,8 +5,8 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         // Input
-        System.out.println("Enter `a`: ");
-        int a = sc.nextInt();
+        System.out.println("Enter `x`: ");
+        int x = sc.nextInt();
 
         System.out.println();
         System.out.println("Enter `n`: ");
@@ -14,7 +14,7 @@ public class Main {
 
         // Solution
         Solution solution = new Solution();
-        int result = solution.fastExpo(a, n);
+        int result = solution.myPow(x, n);
 
         // Output
         System.out.println();
