@@ -12,7 +12,11 @@ public class Solution {
             return 1;
         }
 
-        return tilingProblem(n - 1) + tilingProblem(n - 2);
+        int waysIfHorizontalFirst = tilingProblem(n - 1);
+        int waysIfVerticalFirst = tilingProblem(n - 2);
+        int totalWays = waysIfHorizontalFirst + waysIfVerticalFirst;
+
+        return totalWays;
     }
 }
 
