@@ -13,16 +13,11 @@ public class Solution {
             int currElem = numbers[i];
             int prevIdx = i - 1;
 
-            if (isDescending) {
-                while (prevIdx >= 0 && numbers[prevIdx] < currElem) {
-                    numbers[prevIdx + 1] = numbers[prevIdx];
-                    prevIdx--;
-                }
-            } else {
-                while (prevIdx >= 0 && numbers[prevIdx] > currElem) {
-                    numbers[prevIdx + 1] = numbers[prevIdx];
-                    prevIdx--;
-                }
+            while (prevIdx >= 0 && (isDescending
+                    ? numbers[prevIdx] < currElem
+                    : numbers[prevIdx] > currElem)) {
+                numbers[prevIdx + 1] = numbers[prevIdx];
+                prevIdx--;
             }
 
             numbers[prevIdx + 1] = currElem;
