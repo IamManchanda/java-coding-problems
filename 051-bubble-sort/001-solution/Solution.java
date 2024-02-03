@@ -14,9 +14,11 @@ public class Solution {
             swapped = false;
 
             for (int j = 0; j <= n - 2 - i; j++) {
-                if ((isDescending && numbers[j] < numbers[j + 1])
-                        || (!isDescending && numbers[j] > numbers[j + 1])) {
-                    swapped = swap(numbers, j, j + 1);
+                if (isDescending
+                        ? numbers[j] < numbers[j + 1]
+                        : numbers[j] > numbers[j + 1]) {
+                    swap(numbers, j, j + 1);
+                    swapped = true;
                 }
             }
 
@@ -28,12 +30,10 @@ public class Solution {
         return numbers;
     }
 
-    private boolean swap(int[] numbers, int x, int y) {
+    private void swap(int[] numbers, int x, int y) {
         int temp = numbers[x];
         numbers[x] = numbers[y];
         numbers[y] = temp;
-
-        return true;
     }
 }
 
