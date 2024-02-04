@@ -1,5 +1,7 @@
 /**
  * Inversion Count
+ * https://www.geeksforgeeks.org/problems/inversion-of-array-1587115620/1
+ * (Not submitted as it's a brute force solution)
  * 
  * Approach: Brute Force
  * - Time complexity: O(n^2)
