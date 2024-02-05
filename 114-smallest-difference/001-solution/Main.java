@@ -40,8 +40,7 @@ public class Main {
 
         // Solution
         Solution solution = new Solution();
-        int[] result = solution
-                .smallestDifference(arrayOne, arrayTwo);
+        int[] result = solution.smallestDifference(arrayOne, arrayTwo);
 
         System.out.println();
         System.out.println("Result:");
