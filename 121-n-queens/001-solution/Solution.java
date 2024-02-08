@@ -1,8 +1,11 @@
 /**
- * N-Queens
+ * N-Queens: Print all possible solutions for
+ * placing n queens on an n x n chessboard.
+ * 
  * Approach: Backtracking
  * - Time Complexity: O(n!)
  * - Space Complexity: O(n^2)
+ * Note: For learning purposes, Bad time/space complexity is expected.
  */
 
 public class Solution {
