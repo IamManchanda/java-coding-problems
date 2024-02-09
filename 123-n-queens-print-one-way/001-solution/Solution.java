@@ -31,9 +31,11 @@ public class Solution {
         for (int j = 0; j <= n - 1; j++) {
             if (isSafe(board, i, j)) {
                 board[i][j] = 'Q';
+
                 if (checkNQueens(board, i + 1)) {
                     return true;
                 }
+
                 board[i][j] = 'x';
             }
         }
