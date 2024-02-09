@@ -77,3 +77,11 @@ public class Solution {
  * Result:
  * 2
  */
+
+/*
+ * Enter n:
+ * 5
+ * 
+ * Result:
+ * 10
+ */
