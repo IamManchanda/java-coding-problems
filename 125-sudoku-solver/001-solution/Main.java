@@ -1,9 +1,5 @@
-import java.util.*;
-
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
         char[][] board = {
                 { '5', '3', '.', '.', '7', '.', '.', '.', '.' },
                 { '6', '.', '.', '1', '9', '5', '.', '.', '.' },
@@ -28,7 +24,5 @@ public class Main {
         System.out.println();
         System.out.println("Output `board`:");
         Helpers.printSudoku(board);
-
-        sc.close();
     }
 }
