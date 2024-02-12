@@ -11,17 +11,17 @@ public class Solution {
     public int[] missingNumbers(int[] nums) {
         int n = nums.length;
         int total = 0;
+        int numsTotal = 0;
 
         for (int i = 1; i <= n + 2; i++) {
             total += i;
         }
 
-        int diff = total;
-
         for (int num : nums) {
-            diff -= num;
+            numsTotal += num;
         }
 
+        int diff = total - numsTotal;
         int avr = diff / 2;
         int foundFirstHalf = 0;
         int foundSecondHalf = 0;
