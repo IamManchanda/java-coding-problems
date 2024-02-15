@@ -19,7 +19,10 @@ boolean isUniqueChars(String str) {
   int n = str.length();
 
   // Assuming character set is ASCII (128 characters)
-  if (str.length() > 128) return false;
+  // If the string length exceeds the number of unique characters in the alphabet, return false
+  if (n > 128) {
+    return false;
+  }
 
   // Create a boolean array to store the presence of each character
   boolean[] char_set = new boolean[128];
@@ -61,13 +64,16 @@ boolean isUniqueChars(String str) {
     // Get the ASCII value of the character as an integer
     int val = str.charAt(i) - 'a';
 
+    // Create a shift of 1 by val
+    int shift = 1 << val;
+
     // If the character is already present in the string, return false
-    if ((checker & (1 << val)) > 0) {
+    if ((checker & shift) > 0) {
       return false;
     }
 
     // Set the character as present in the string
-    checker |= (1 << val);
+    checker |= shift;
   }
 
   // If no character is repeated, return true
