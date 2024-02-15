@@ -6,14 +6,16 @@
  * where, n is the length of the string
  */
 public class Solution {
+    private static final int ASCII_SIZE = 128;
+
     public boolean isUniqueChars(String str) {
         int n = str.length();
 
-        if (n > 128) {
+        if (n > ASCII_SIZE) {
             return false;
         }
 
-        boolean[] charSet = new boolean[128];
+        boolean[] charSet = new boolean[ASCII_SIZE];
 
         for (int i = 0; i <= n - 1; i++) {
             int val = str.charAt(i);

@@ -15,17 +15,18 @@ It's also okay to assume 256 characters. This would be the case in extended ASCI
 This code below implements this algorithm:
 
 ```java
+final int ASCII_SIZE = 128;
+
 boolean isUniqueChars(String str) {
   int n = str.length();
 
-  // Assuming character set is ASCII (128 characters)
   // If the string length exceeds the number of unique characters in the alphabet, return false
-  if (n > 128) {
+  if (n > ASCII_SIZE) {
     return false;
   }
 
   // Create a boolean array to store the presence of each character
-  boolean[] char_set = new boolean[128];
+  boolean[] char_set = new boolean[ASCII_SIZE];
 
   // Iterate for each character in the string
   for (int i = 0; i <= n - 1; i++) {

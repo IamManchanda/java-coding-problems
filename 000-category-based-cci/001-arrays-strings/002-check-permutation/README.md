@@ -61,13 +61,13 @@ boolean permutation(String s, String t) {
   // Letters array to store the count of each character
   int[] letters = new int[ASCII_SIZE];
 
-  // Count the number of each character in s
   for (int i = 0; i <= sn - 1; i++) {
+    // Count the number of each character in s
     letters[s.charAt(i)]++;
   }
 
-  // Compare the number of each character in t
   for (int i = 0; i <= tn - 1; i++) {
+    // Count the number of each character in t
     letters[t.charAt(i)]--;
 
     // If the count is less than 0, the strings are not permutations
