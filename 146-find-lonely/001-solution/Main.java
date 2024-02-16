@@ -18,7 +18,7 @@ public class Main {
         }
 
         System.out.println();
-        System.out.println("Entered `list`");
+        System.out.println("Entered `nums`");
         System.out.println(Arrays.toString(nums));
 
         // Solution

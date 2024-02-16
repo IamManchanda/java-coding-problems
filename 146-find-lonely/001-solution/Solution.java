@@ -43,7 +43,7 @@ public class Solution {
 }
 
 /*
- * Entered `list`
+ * Entered `nums`
  * [10, 6, 5, 8]
  * 
  * Result:
@@ -51,7 +51,7 @@ public class Solution {
  */
 
 /*
- * Entered `list`
+ * Entered `nums`
  * [1, 3, 5, 3]
  * 
  * Result:
