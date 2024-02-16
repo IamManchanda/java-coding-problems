@@ -20,11 +20,7 @@ public class Solution {
             newLetters[i] = getNewLetter(letter, keyMod);
         }
 
-        return transform(newLetters);
-    }
-
-    private String transform(char[] letters) {
-        return new String(letters);
+        return new String(newLetters);
     }
 
     private char getNewLetter(char letter, int key) {
