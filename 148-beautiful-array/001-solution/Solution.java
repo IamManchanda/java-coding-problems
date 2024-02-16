@@ -39,3 +39,19 @@ public class Solution {
         return list.stream().mapToInt(i -> i).toArray();
     }
 }
+
+/*
+ * Enter `n`:
+ * 4
+ * 
+ * Result:
+ * [4, 2, 3, 1]
+ */
+
+/*
+ * Enter `n`:
+ * 5
+ * 
+ * Result:
+ * [4, 2, 3, 5, 1]
+ */
