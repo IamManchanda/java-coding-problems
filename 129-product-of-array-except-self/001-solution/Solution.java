@@ -5,7 +5,7 @@
  * 
  * Approach: Brute Force
  * - Time complexity: O(n^2)
- * - Space complexity: O(n) { O(1) extra space }
+ * - Space complexity: O(1) auxiliary
  */
 
 public class Solution {

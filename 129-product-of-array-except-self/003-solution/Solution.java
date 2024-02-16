@@ -5,7 +5,7 @@
  * 
  * Approach: Left and Right Product Lists (Optimized)
  * - Time complexity: O(n)
- * - Space complexity: O(n) { O(1) extra space }
+ * - Space complexity: O(1) auxiliary
  */
 
 public class Solution {
