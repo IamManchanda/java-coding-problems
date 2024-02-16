@@ -1,6 +1,8 @@
 # Pair Sum in Rotated Sorted Array
 
-## Two Pointers (l, r on opposite sides of the pivot)
+## Formula for Solution 001: Two Pointers
+
+> (l, r on opposite sides of the pivot)
 
 As it's a rotated sorted array,
 

@@ -12,11 +12,6 @@ public class Solution {
     }
 
     private int permutation(int n, int m) {
-        /**
-         * Formula:
-         * (n - 1 + m - 1)! / (n - 1)! * (m - 1)!
-         * => (n + m - 2)! / (n - 1)! * (m - 1)!
-         */
         return factorial(n + m - 2) / (factorial(n - 1) * factorial(m - 1));
     }
 
