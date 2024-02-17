@@ -21,7 +21,7 @@ public class Solution {
             charCounts.put(c, charCounts.getOrDefault(c, 0) + 1);
         }
 
-        for (int i = 0; i < string.length(); i++) {
+        for (int i = 0; i <= string.length() - 1; i++) {
             if (charCounts.get(string.charAt(i)) == 1) {
                 return i;
             }
@@ -30,3 +30,11 @@ public class Solution {
         return -1;
     }
 }
+
+/*
+ * Enter String `string`:
+ * abcdcaf
+ * 
+ * Result:
+ * 1
+ */
