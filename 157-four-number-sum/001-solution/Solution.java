@@ -32,6 +32,10 @@ public class Solution {
                 }
             }
 
+            if (i == n - 2) {
+                break;
+            }
+
             for (int k = 0; k <= i - 1; k++) {
                 int currentSum = array[k] + array[i];
                 Integer[] pair = { array[k], array[i] };
