@@ -2,25 +2,27 @@
  * Palindrome Check
  * https://www.algoexpert.io/questions/palindrome-check
  * 
- * Approach: Recursion (Compare Indices)
- * - Time complexity: O(n)
+ * Approach: Iterate to Reverse and Compare
+ * - Time complexity: O(n^2)
  * - Space complexity: O(n)
  */
 
 public class Solution {
     public boolean isPalindrome(String str) {
-        return isPalindrome(str, 0);
+        String reversedString = getReversedString(str);
+
+        return str.equals(reversedString);
     }
 
-    private boolean isPalindrome(String str, int i) {
+    private String getReversedString(String str) {
         int n = str.length();
-        int j = n - i - 1;
+        String reversedString = "";
 
-        if (i >= j) {
-            return true;
+        for (int i = n - 1; i >= 0; i--) {
+            reversedString += str.charAt(i);
         }
 
-        return str.charAt(i) == str.charAt(j) && isPalindrome(str, i + 1);
+        return reversedString;
     }
 }
 

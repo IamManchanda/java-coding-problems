@@ -2,25 +2,25 @@
  * Palindrome Check
  * https://www.algoexpert.io/questions/palindrome-check
  * 
- * Approach: Recursion (Compare Indices)
+ * Approach: Two Pointers
  * - Time complexity: O(n)
- * - Space complexity: O(n)
+ * - Space complexity: O(1)
  */
 
 public class Solution {
     public boolean isPalindrome(String str) {
-        return isPalindrome(str, 0);
-    }
+        int l = 0, r = str.length() - 1;
 
-    private boolean isPalindrome(String str, int i) {
-        int n = str.length();
-        int j = n - i - 1;
+        while (l < r) {
+            if (str.charAt(l) != str.charAt(r)) {
+                return false;
+            }
 
-        if (i >= j) {
-            return true;
+            l++;
+            r--;
         }
 
-        return str.charAt(i) == str.charAt(j) && isPalindrome(str, i + 1);
+        return true;
     }
 }
 
