@@ -10,6 +10,7 @@
 public class Solution {
     public String longestPalindromicSubstring(String str) {
         int[] longest = { 0, 1 };
+
         for (int i = 1; i <= str.length() - 1; i++) {
             int longestDiff = longest[1] - longest[0];
 
