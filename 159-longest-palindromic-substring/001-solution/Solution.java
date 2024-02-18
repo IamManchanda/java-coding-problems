@@ -1,6 +1,6 @@
 /**
- * Palindrome Check
- * https://www.algoexpert.io/questions/palindrome-check
+ * Longest Palindromic Substring
+ * https://www.algoexpert.io/questions/longest-palindromic-substring
  * 
  * Approach: Brute Force
  * - Time complexity: O(n^3)
