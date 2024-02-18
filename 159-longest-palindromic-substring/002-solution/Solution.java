@@ -9,19 +9,17 @@
 
 public class Solution {
     public String longestPalindromicSubstring(String str) {
-        int[] longest = { 0, 1 };
+        int[] longest = { 0, 1 }, current;
+        int longestDiff, currentDiff;
 
         for (int i = 1; i <= str.length() - 1; i++) {
-            int longestDiff = longest[1] - longest[0];
+            longestDiff = longest[1] - longest[0];
 
             int[] odd = getLongestPalindrome(str, i - 1, i + 1);
             int oddDiff = odd[1] - odd[0];
 
             int[] even = getLongestPalindrome(str, i - 1, i);
             int evenDiff = even[1] - even[0];
-
-            int[] current;
-            int currentDiff;
 
             if (oddDiff > evenDiff) {
                 current = odd;
