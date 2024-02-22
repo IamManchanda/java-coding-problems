@@ -40,6 +40,23 @@ public class LinkedList {
         addLast(data);
     }
 
+    public void add(int data, int index) {
+        if (index == 0) {
+            addFirst(data);
+            return;
+        }
+
+        Node newNode = new Node(data);
+        Node temp = head;
+
+        for (int i = 0; i <= index - 2; i++) {
+            temp = temp.next;
+        }
+
+        newNode.next = temp.next;
+        temp.next = newNode;
+    }
+
     public void print() {
         Node temp = head;
 
