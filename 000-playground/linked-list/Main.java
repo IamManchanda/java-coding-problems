@@ -7,7 +7,7 @@ public class Main {
         ll.addLast(5);
         ll.add(2, 3);
         ll.print();
-        System.out.println(ll.recursiveSearch(3));
-        System.out.println(ll.recursiveSearch(10));
+        ll.reverse();
+        ll.print();
     }
 }

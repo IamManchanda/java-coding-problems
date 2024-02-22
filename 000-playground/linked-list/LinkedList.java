@@ -153,4 +153,19 @@ public class LinkedList {
 
         return index + 1;
     }
+
+    public void reverse() {
+        Node prev = null;
+        Node current = tail = head;
+        Node next = null;
+
+        while (current != null) {
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+
+        head = prev;
+    }
 }
