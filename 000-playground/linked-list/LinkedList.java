@@ -79,6 +79,28 @@ public class LinkedList {
         return val;
     }
 
+    public int removeLast() {
+        if (count == 0) {
+            System.out.println("List is empty");
+            return Integer.MIN_VALUE;
+        } else if (count == 1) {
+            return removeFirst();
+        }
+
+        Node prev = head;
+
+        for (int i = 0; i <= count - 3; i++) {
+            prev = prev.next;
+        }
+
+        int val = prev.next.data; // tail.data
+        prev.next = null;
+        tail = prev;
+        count--;
+
+        return val;
+    }
+
     public void print() {
         Node temp = head;
 

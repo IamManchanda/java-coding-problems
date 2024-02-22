@@ -9,6 +9,8 @@ public class Main {
         ll.print();
         ll.removeFirst();
         ll.print();
+        ll.removeLast();
+        ll.print();
         System.out.println("Size: " + ll.size());
     }
 }
