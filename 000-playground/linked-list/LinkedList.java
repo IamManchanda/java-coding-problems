@@ -101,6 +101,32 @@ public class LinkedList {
         return val;
     }
 
+    public void removeLast(int index) {
+        int sz = 0;
+
+        Node temp = head;
+
+        while (temp != null) {
+            temp = temp.next;
+            sz++;
+        }
+
+        if (index == sz) {
+            head = head.next;
+            return;
+        }
+
+        int i = 0, find = sz - index - 1;
+        Node prev = head;
+
+        while (i < find) {
+            prev = prev.next;
+            i++;
+        }
+
+        prev.next = prev.next.next;
+    }
+
     public void print() {
         Node temp = head;
 
