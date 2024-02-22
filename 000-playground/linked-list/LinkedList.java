@@ -61,6 +61,24 @@ public class LinkedList {
         temp.next = newNode;
     }
 
+    public int removeFirst() {
+        if (count == 0) {
+            System.out.println("List is empty");
+            return Integer.MIN_VALUE;
+        }
+
+        int val = head.data;
+
+        if (count == 1) {
+            head = tail = null;
+        } else {
+            head = head.next;
+        }
+
+        count--;
+        return val;
+    }
+
     public void print() {
         Node temp = head;
 
