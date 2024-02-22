@@ -115,4 +115,42 @@ public class LinkedList {
     public int size() {
         return count;
     }
+
+    public int iterativeSearch(int key) {
+        Node temp = head;
+        int i = 0;
+
+        while (temp != null) {
+            if (temp.data == key) {
+                return i;
+            }
+
+            temp = temp.next;
+            i++;
+        }
+
+        return -1;
+    }
+
+    public int recursiveSearch(int key) {
+        return recursiveSearch(head, key);
+    }
+
+    private int recursiveSearch(Node head, int key) {
+        if (head == null) {
+            return -1;
+        }
+
+        if (head.data == key) {
+            return 0;
+        }
+
+        int index = recursiveSearch(head.next, key);
+
+        if (index == -1) {
+            return -1;
+        }
+
+        return index + 1;
+    }
 }
