@@ -5,13 +5,17 @@ public class Main {
         ll.add(2);
         ll.add(2);
         ll.add(1);
-        ll.print();
-        System.out.println(ll.checkPalindrome());
+        print(ll);
         ll.removeLast(2);
-        ll.print();
-        System.out.println(ll.checkPalindrome());
+        print(ll);
         ll.add(3);
+        print(ll);
+    }
+
+    private static void print(LinkedList ll) {
+        System.out.println();
         ll.print();
-        System.out.println(ll.checkPalindrome());
+        System.out.println("Size: " + ll.size());
+        System.out.println("Is Palindrome?: " + ll.checkPalindrome());
     }
 }

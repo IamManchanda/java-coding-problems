@@ -102,21 +102,12 @@ public class LinkedList {
     }
 
     public void removeLast(int index) {
-        int sz = 0;
-
-        Node temp = head;
-
-        while (temp != null) {
-            temp = temp.next;
-            sz++;
-        }
-
-        if (index == sz) {
+        if (index == count) {
             head = head.next;
             return;
         }
 
-        int i = 0, find = sz - index - 1;
+        int i = 0, find = count - index - 1;
         Node prev = head;
 
         while (i < find) {
@@ -125,6 +116,7 @@ public class LinkedList {
         }
 
         prev.next = prev.next.next;
+        count--;
     }
 
     public void print() {
