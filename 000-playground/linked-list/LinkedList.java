@@ -181,9 +181,8 @@ public class LinkedList {
     }
 
     public void reverse() {
-        Node prev = null;
-        Node current = tail = head;
-        Node next = null;
+        Node current, prev = null, next = null;
+        current = tail = head;
 
         while (current != null) {
             next = current.next;
@@ -193,5 +192,47 @@ public class LinkedList {
         }
 
         head = prev;
+    }
+
+    public Node findMid(Node head) {
+        Node slow, fast;
+        slow = fast = head;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next; // Move 1 step
+            fast = fast.next.next; // Move 2 steps
+        }
+
+        return slow;
+    }
+
+    public boolean checkPalindrome() {
+        if (head == null || head.next == null) {
+            return true;
+        }
+
+        Node current, prev = null, next = null, left, right;
+        current = findMid(head);
+
+        while (current != null) {
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+
+        left = head;
+        right = prev;
+
+        while (right != null) {
+            if (left.data != right.data) {
+                return false;
+            }
+
+            left = left.next;
+            right = right.next;
+        }
+
+        return true;
     }
 }
