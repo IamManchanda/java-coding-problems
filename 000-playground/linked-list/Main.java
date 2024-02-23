@@ -1,14 +1,16 @@
 public class Main {
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
-        ll.add(1);
         ll.add(2);
+        ll.addFirst(1);
         ll.add(2);
         ll.add(1);
         print(ll);
         ll.removeLast(2);
         print(ll);
         ll.add(3);
+        print(ll);
+        ll.removeLast();
         print(ll);
     }
 
