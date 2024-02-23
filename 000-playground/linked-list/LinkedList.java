@@ -194,6 +194,19 @@ public class LinkedList {
         head = prev;
     }
 
+    private Node reverse(Node node) {
+        Node current = node, prev = null, next = null;
+
+        while (current != null) {
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+
+        return prev;
+    }
+
     public Node findMid(Node head) {
         Node slow, fast;
         slow = fast = head;
@@ -214,6 +227,8 @@ public class LinkedList {
         Node current, prev = null, next = null, left, right;
         current = findMid(head);
 
+        Node headCopy = new Node(head.data);
+
         while (current != null) {
             next = current.next;
             current.next = prev;
@@ -232,6 +247,8 @@ public class LinkedList {
             left = left.next;
             right = right.next;
         }
+
+        headCopy.next = reverse(prev);
 
         return true;
     }

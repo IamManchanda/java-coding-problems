@@ -7,5 +7,11 @@ public class Main {
         ll.add(1);
         ll.print();
         System.out.println(ll.checkPalindrome());
+        ll.removeLast(2);
+        ll.print();
+        System.out.println(ll.checkPalindrome());
+        ll.add(3);
+        ll.print();
+        System.out.println(ll.checkPalindrome());
     }
 }
