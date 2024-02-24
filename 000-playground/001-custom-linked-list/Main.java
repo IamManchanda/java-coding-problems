@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        LinkedList ll = new LinkedList();
+        CustomLinkedList ll = new CustomLinkedList();
         ll.add(2);
         ll.addFirst(1);
         ll.add(2);
@@ -14,7 +14,7 @@ public class Main {
         print(ll);
     }
 
-    private static void print(LinkedList ll) {
+    private static void print(CustomLinkedList ll) {
         System.out.println();
         ll.print();
         System.out.println("Size: " + ll.size());

@@ -1,4 +1,4 @@
-public class LinkedList {
+public class CustomLinkedList {
     public static class Node {
         int data;
         Node next;
