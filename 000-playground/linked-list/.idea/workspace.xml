@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="403de0a9-b7aa-48db-bd87-a61787fe3854" name="Changes" comment="" />
+    <list default="true" id="403de0a9-b7aa-48db-bd87-a61787fe3854" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../172-merge-sort-linked-list/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../172-merge-sort-linked-list/001-solution/CustomLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../172-merge-sort-linked-list/001-solution/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../172-merge-sort-linked-list/001-solution/__prod/CustomLinkedList$Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../172-merge-sort-linked-list/001-solution/__prod/CustomLinkedList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../172-merge-sort-linked-list/001-solution/__prod/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../172-merge-sort-linked-list/001-solution/_run.sh" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
