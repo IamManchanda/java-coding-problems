@@ -32,6 +32,10 @@ public class Solution {
 
     // Actual solution starts here (for LeetCode submission)
     public void reorderList(ListNode head) {
+        if (head == null || head.next == null) {
+            return;
+        }
+
         ListNode slow = head;
         ListNode fast = head.next;
 
