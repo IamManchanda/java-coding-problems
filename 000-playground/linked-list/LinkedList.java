@@ -119,21 +119,6 @@ public class LinkedList {
         count--;
     }
 
-    public void print() {
-        Node temp = head;
-
-        while (temp != null) {
-            System.out.print(temp.data + " -> ");
-            temp = temp.next;
-        }
-
-        System.out.println("null");
-    }
-
-    public int size() {
-        return count;
-    }
-
     public int iterativeSearch(int key) {
         Node temp = head;
         int i = 0;
@@ -243,6 +228,21 @@ public class LinkedList {
         headCopy.next = reverse(prev);
 
         return true;
+    }
+
+    public void print() {
+        Node temp = head;
+
+        while (temp != null) {
+            System.out.print(temp.data + " -> ");
+            temp = temp.next;
+        }
+
+        System.out.println("null");
+    }
+
+    public int size() {
+        return count;
     }
 
     public static boolean isCycle() {
