@@ -261,13 +261,49 @@ public class LinkedList {
         return false;
     }
 
+    public static void removeCycle() {
+        Node slow, fast;
+        slow = fast = head;
+
+        boolean isCycle = false;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next; // Move 1 step
+            fast = fast.next.next; // Move 2 steps
+
+            if (slow == fast) {
+                isCycle = true;
+                break;
+            }
+        }
+
+        if (!isCycle) {
+            System.out.println("Cycle not found");
+            return;
+        }
+
+        slow = head;
+
+        Node prev = null;
+
+        while (slow != fast) {
+            prev = fast;
+            slow = slow.next; // Move 1 step
+            fast = fast.next; // Move 1 step
+        }
+
+        prev.next = null;
+    }
+
     public static void main(String[] args) {
         head = new Node(1);
-        head.next = new Node(2);
+        Node temp = new Node(2);
+        head.next = temp;
         head.next.next = new Node(3);
-        System.out.println(isCycle());
+        head.next.next.next = temp;
 
-        head.next.next.next = head;
+        System.out.println(isCycle());
+        removeCycle();
         System.out.println(isCycle());
     }
 }
