@@ -1,17 +1,17 @@
 /**
  * Problem: Print star pattern.
  * 
- * - Time complexity: O(n^2)
- * - Space complexity: O(1)
+ * - Time complexity: O(n)
+ * - Space complexity: O(n)
  */
 
 public class Solution {
     public void printStarPattern(int lines) {
+        StringBuilder sb = new StringBuilder("*");
+
         for (int row = 1; row <= lines; row++) {
-            for (int col = 1; col <= row; col++) {
-                System.out.print("*");
-            }
-            System.out.println();
+            System.out.println(sb);
+            sb.append("*");
         }
     }
 }
