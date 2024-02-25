@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         CustomLinkedList dll = new CustomLinkedList();
+        print(dll);
         dll.add(1);
         dll.add(2);
         dll.add(3);
@@ -12,6 +13,8 @@ public class Main {
         print(dll);
         dll.removeFirst();
         dll.removeLast();
+        print(dll);
+        dll.reverse();
         print(dll);
     }
 
