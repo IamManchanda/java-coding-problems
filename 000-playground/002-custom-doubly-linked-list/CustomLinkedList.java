@@ -13,7 +13,7 @@ public class CustomLinkedList {
 
     public static Node head;
     public static Node tail;
-    public static int count;
+    private static int count;
 
     public void addFirst(int data) {
         Node newNode = new Node(data);
@@ -45,6 +45,42 @@ public class CustomLinkedList {
 
     public void add(int data) {
         addLast(data);
+    }
+
+    public int removeFirst() {
+        if (head == null) {
+            System.out.println("List is empty");
+            return Integer.MIN_VALUE;
+        }
+
+        int val = head.data;
+
+        if (count == 1) {
+            head = tail = null;
+        } else {
+            head = head.next;
+            head.prev = null;
+        }
+
+        count--;
+
+        return val;
+    }
+
+    public int removeLast() {
+        if (count == 0) {
+            System.out.println("List is empty");
+            return Integer.MIN_VALUE;
+        } else if (count == 1) {
+            return removeFirst();
+        }
+
+        int val = tail.data;
+        tail = tail.prev;
+        tail.next = null;
+        count--;
+
+        return val;
     }
 
     public void print() {
