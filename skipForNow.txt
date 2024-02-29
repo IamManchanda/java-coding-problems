@@ -1,2 +1,17 @@
 1. The Knight’s tour problem
 https://www.geeksforgeeks.org/the-knights-tour-problem/
+
+2. Intersection of Two Linked Lists
+https://www.geeksforgeeks.org/write-a-function-to-get-the-intersection-point-of-two-linked-lists/
+
+3. Delete N nodes after M nodes of a linked list
+https://www.geeksforgeeks.org/delete-n-nodes-after-m-nodes-of-a-linked-list/
+
+4. Swapping Nodes in a Linked List
+https://www.geeksforgeeks.org/swap-nodes-in-a-linked-list-without-swapping-data/
+
+5. Odd Even Linked List
+https://www.geeksforgeeks.org/rearrange-a-linked-list-such-that-all-even-and-odd-positioned-nodes-are-together/
+
+6. Merge K sorted linked lists
+https://www.geeksforgeeks.org/merge-k-sorted-linked-lists/
