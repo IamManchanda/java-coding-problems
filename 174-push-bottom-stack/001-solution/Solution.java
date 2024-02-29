@@ -2,6 +2,10 @@ import java.util.*;
 
 /**
  * Push an item at the bottom of the stack
+ * 
+ * Approach: Recursion
+ * - Time complexity: O(n)
+ * - Space complexity: O(n)
  */
 
 public class Solution {
