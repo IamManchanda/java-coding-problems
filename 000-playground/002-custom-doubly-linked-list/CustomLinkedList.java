@@ -1,3 +1,7 @@
+/**
+ * Custom Doubly Linked List
+ */
+
 public class CustomLinkedList {
     public static class Node {
         int data;
