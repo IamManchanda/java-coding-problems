@@ -16,6 +16,13 @@ public class Main {
             price[i] = sc.nextInt();
         }
 
+        System.out.println();
+        System.out.println("Entered items in `price`: ");
+        System.out.println(Arrays.toString(price));
+
+        System.out.println();
+        System.out.println("Number of items in `price`: " + n);
+
         // Solution
         Solution solution = new Solution();
         int[] result = solution.calculateSpan(price, n);

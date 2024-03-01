@@ -37,3 +37,33 @@ public class Solution {
         }
     }
 }
+
+/*
+ * Entered items in `price`:
+ * [100, 80, 60, 70, 60, 75, 85]
+ * 
+ * Number of items in `price`: 7
+ * 
+ * Result:
+ * [1, 1, 1, 2, 1, 4, 6]
+ */
+
+/*
+ * Entered items in `price`:
+ * [10, 4, 5, 90, 120, 80]
+ * 
+ * Number of items in `price`: 6
+ * 
+ * Result:
+ * [1, 1, 2, 4, 5, 1]
+ */
+
+/*
+ * Entered items in `price`:
+ * [100, 80, 60, 70, 60, 85, 100]
+ * 
+ * Number of items in `price`: 7
+ * 
+ * Result:
+ * [1, 1, 1, 2, 1, 5, 7]
+ */
