@@ -2,6 +2,10 @@ import java.util.*;
 
 /**
  * Next Greater Element
+ * 
+ * Approach: Using Stack
+ * - Time complexity: O(n)
+ * - Space complexity: O(n)
  */
 
 public class Solution {
