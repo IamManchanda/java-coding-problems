@@ -17,15 +17,12 @@ public class Solution {
             if (ch == ')') {
                 int count = 0;
 
-                while (st.peek() != '(') {
-                    st.pop();
+                while (st.pop() != '(') {
                     count++;
                 }
 
                 if (count < 1) {
                     return true;
-                } else {
-                    st.pop();
                 }
             } else {
                 st.push(ch);
