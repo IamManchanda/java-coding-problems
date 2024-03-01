@@ -3,6 +3,10 @@ import java.util.*;
 /**
  * Stock Span Problem
  * https://www.geeksforgeeks.org/problems/stock-span-problem-1587115621/1
+ * 
+ * Approach: Using Stack
+ * - Time complexity: O(n)
+ * - Space complexity: O(n)
  */
 
 public class Solution {
