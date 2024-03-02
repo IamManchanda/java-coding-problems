@@ -4,14 +4,14 @@ import java.util.*;
  * Problem: Trapping rain water
  * https://leetcode.com/problems/trapping-rain-water/description/
  * 
- * Approach: Using stack
+ * Approach: Using Stack (ArrayDeque)
  * - Time complexity: O(n)
  * - Space complexity: O(n)
  */
 
 public class Solution {
     public int trap(int[] height) {
-        Stack<Integer> st = new Stack<>();
+        ArrayDeque<Integer> st = new ArrayDeque<>();
         int trappedWater = 0, n = height.length;
 
         for (int i = 0; i <= n - 1; i++) {
