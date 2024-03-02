@@ -4,7 +4,7 @@ import java.util.*;
  * Largest Rectangle in Histogram
  * https://leetcode.com/problems/largest-rectangle-in-histogram/description/
  * 
- * Approach: Using Stack
+ * Approach: Using Stack (ArrayDeque)
  * - Time complexity: O(n)
  * - Space complexity: O(n)
  */
@@ -28,7 +28,7 @@ public class Solution {
     private int[] nextSmaller(int[] heights, int n, boolean toRight) {
         int defaultIndex = toRight ? n : -1;
         int[] result = new int[n];
-        Stack<Integer> st = new Stack<>();
+        ArrayDeque<Integer> st = new ArrayDeque<>();
 
         for (int i = toRight ? n - 1 : 0; toRight ? i >= 0 : i <= n - 1; i += toRight ? -1 : 1) {
             while (!st.isEmpty() && heights[st.peek()] >= heights[i]) {
