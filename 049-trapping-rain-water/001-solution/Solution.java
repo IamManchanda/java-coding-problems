@@ -2,16 +2,16 @@
  * Problem: Trapping rain water
  * https://leetcode.com/problems/trapping-rain-water/description/
  * 
- * Time complexity: O(n)
- * Space complexity: O(n)
+ * Approach: Using arrays, store left right max boundaries
+ * - Time complexity: O(n)
+ * - Space complexity: O(n)
  */
 
 public class Solution {
     public int trap(int[] height) {
-        int trappedWater = 0;
-        int n = height.length;
-        int[] leftMax = getLeftMaxBoundaryList(height, n);
-        int[] rightMax = getRightMaxBoundaryList(height, n);
+        int trappedWater = 0, n = height.length;
+        int[] leftMax = getLeftMaxBoundaryList(height, n),
+                rightMax = getRightMaxBoundaryList(height, n);
 
         for (int i = 0; i < n; i++) {
             int waterLevel = Math.min(leftMax[i], rightMax[i]);
@@ -45,24 +45,7 @@ public class Solution {
 }
 
 /*
- * Enter number of items in the `height` array:
- * 12
- * 
- * Enter items:
- * Enter item 1: 0
- * Enter item 2: 1
- * Enter item 3: 0
- * Enter item 4: 2
- * Enter item 5: 1
- * Enter item 6: 0
- * Enter item 7: 1
- * Enter item 8: 3
- * Enter item 9: 2
- * Enter item 10: 1
- * Enter item 11: 2
- * Enter item 12: 1
- * 
- * Original Input (`height` array):
+ * Entered `height` array:
  * [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]
  * 
  * Result:
@@ -70,18 +53,7 @@ public class Solution {
  */
 
 /*
- * Enter number of items in the `height` array:
- * 6
- * 
- * Enter items:
- * Enter item 1: 4
- * Enter item 2: 2
- * Enter item 3: 0
- * Enter item 4: 3
- * Enter item 5: 2
- * Enter item 6: 5
- * 
- * Original Input (`height` array):
+ * Entered `height` array:
  * [4, 2, 0, 3, 2, 5]
  * 
  * Result:
