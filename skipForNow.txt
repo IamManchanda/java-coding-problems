@@ -15,3 +15,12 @@ https://www.geeksforgeeks.org/rearrange-a-linked-list-such-that-all-even-and-odd
 
 6. Merge K sorted linked lists
 https://www.geeksforgeeks.org/merge-k-sorted-linked-lists/
+
+7. Palindrome Linked List
+https://leetcode.com/problems/palindrome-linked-list/description/
+
+8. Simplify Path
+https://leetcode.com/problems/simplify-path/description/
+
+9. Decode a String 
+https://leetcode.com/problems/decode-string/description/
