@@ -22,7 +22,7 @@ public class Solution {
             activities[i][2] = end[i];
         }
 
-        Arrays.sort(activities, Comparator.comparingInt(o -> o[2]));
+        Arrays.sort(activities, (a, b) -> a[2] - b[2]);
 
         maxAct = 1;
         selAct.add(activities[0][0]);
