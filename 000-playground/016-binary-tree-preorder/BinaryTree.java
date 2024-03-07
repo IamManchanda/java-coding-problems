@@ -22,12 +22,21 @@ public class BinaryTree {
 
     public void preOrder(BinaryTreeNode root) {
         if (root == null) {
-            System.out.print("-1" + " ");
             return;
         }
 
         System.out.print(root.data + " ");
         preOrder(root.left);
         preOrder(root.right);
+    }
+
+    public void inOrder(BinaryTreeNode root) {
+        if (root == null) {
+            return;
+        }
+
+        inOrder(root.left);
+        System.out.print(root.data + " ");
+        inOrder(root.right);
     }
 }

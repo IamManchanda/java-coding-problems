@@ -6,5 +6,7 @@ public class Main {
         BinaryTreeNode root = tree.buildTree(nodes);
 
         tree.preOrder(root);
+        System.out.println();
+        tree.inOrder(root);
     }
 }
