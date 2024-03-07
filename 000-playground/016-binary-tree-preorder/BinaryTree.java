@@ -1,5 +1,5 @@
 /**
- * Build Tree from Pre-order Traversal
+ * Binary Tree
  */
 
 public class BinaryTree {
@@ -40,3 +40,14 @@ public class BinaryTree {
         inOrder(root.right);
     }
 }
+
+/*
+ * Input:
+ * 1 2 4 -1 -1 5 -1 -1 3 -1 6 -1 -1
+ * 
+ * Pre-order Traversal:
+ * 1 2 4 5 3 6
+ * 
+ * In-order Traversal:
+ * 4 2 5 1 3 6
+ */
