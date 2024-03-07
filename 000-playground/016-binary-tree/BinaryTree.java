@@ -39,6 +39,16 @@ public class BinaryTree {
         System.out.print(root.data + " ");
         inOrder(root.right);
     }
+
+    public void postOrder(BinaryTreeNode root) {
+        if (root == null) {
+            return;
+        }
+
+        postOrder(root.left);
+        postOrder(root.right);
+        System.out.print(root.data + " ");
+    }
 }
 
 /*
@@ -50,4 +60,7 @@ public class BinaryTree {
  * 
  * In-order Traversal:
  * 4 2 5 1 3 6
+ * 
+ * Post-order Traversal:
+ * 4 5 2 6 3 1
  */

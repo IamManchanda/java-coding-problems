@@ -21,5 +21,11 @@ public class Main {
 
         System.out.println("In-order Traversal: ");
         tree.inOrder(root);
+
+        System.out.println();
+        System.out.println();
+
+        System.out.println("Post-order Traversal: ");
+        tree.postOrder(root);
     }
 }
