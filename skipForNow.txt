@@ -40,3 +40,14 @@ https://www.geeksforgeeks.org/problems/reverse-first-k-elements-of-queue/1
 14. Maximum of all subarrays of size k
 https://www.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k3101/1
 
+15. Maximum Balanced String Partitions
+https://www.geeksforgeeks.org/maximum-balanced-string-partitions/
+
+16. Kth largest odd number in a given range
+https://www.geeksforgeeks.org/kth-largest-odd-number-in-a-given-range/
+
+17. Lexicographically smallest string of length N and sum K
+https://www.geeksforgeeks.org/lexicographically-smallest-string-of-length-n-and-sum-k/
+
+18. Best Time to Buy and Sell Stock
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
