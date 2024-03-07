@@ -1,3 +1,5 @@
+import java.util.*;
+
 /**
  * Binary Tree
  */
@@ -49,18 +51,57 @@ public class BinaryTree {
         postOrder(root.right);
         System.out.print(root.data + " ");
     }
+
+    public void levelOrder(BinaryTreeNode root) {
+        if (root == null) {
+            return;
+        }
+
+        Queue<BinaryTreeNode> q = new LinkedList<>();
+        q.add(root);
+        q.add(null);
+
+        while (!q.isEmpty()) {
+            BinaryTreeNode currentNode = q.poll();
+
+            if (currentNode == null) {
+                System.out.println();
+
+                if (q.isEmpty()) {
+                    break;
+                } else {
+                    q.add(null);
+                }
+            } else {
+                System.out.print(currentNode.data + " ");
+
+                if (currentNode.left != null) {
+                    q.add(currentNode.left);
+                }
+
+                if (currentNode.right != null) {
+                    q.add(currentNode.right);
+                }
+            }
+        }
+    }
 }
 
 /*
- * Input (Depth First Traversal):
+ * Input (DFS):
  * 1 2 4 -1 -1 5 -1 -1 3 -1 6 -1 -1
  * 
- * Pre-order Traversal:
+ * Pre-order Traversal (DFS):
  * 1 2 4 5 3 6
  * 
- * In-order Traversal:
+ * In-order Traversal (DFS):
  * 4 2 5 1 3 6
  * 
- * Post-order Traversal:
+ * Post-order Traversal (DFS):
  * 4 5 2 6 3 1
+ * 
+ * Level-order Traversal (BFS):
+ * 1
+ * 2 3
+ * 4 5 6
  */
