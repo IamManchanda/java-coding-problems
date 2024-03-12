@@ -54,3 +54,12 @@ https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
 
 19. Check if a Binary Tree is uni-valued or not
 https://leetcode.com/problems/univalued-binary-tree/description/
+
+20. Delete leaf nodes with values as x
+https://www.geeksforgeeks.org/delete-leaf-nodes-value-x/
+
+21. Find All Duplicate Subtrees
+https://leetcode.com/problems/find-duplicate-subtrees/description/
+
+22. Maximum Path Sum in a Binary Tree
+https://leetcode.com/problems/binary-tree-maximum-path-sum/description/
