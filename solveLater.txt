@@ -51,3 +51,6 @@ https://www.geeksforgeeks.org/lexicographically-smallest-string-of-length-n-and-
 
 18. Best Time to Buy and Sell Stock
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+
+19. Check if a Binary Tree is uni-valued or not
+https://leetcode.com/problems/univalued-binary-tree/description/
