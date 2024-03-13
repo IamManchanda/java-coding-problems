@@ -11,7 +11,7 @@ public class Main {
         System.out.println();
 
         BinaryTree tree = new BinaryTree();
-        BinaryTreeNode root = tree.buildTree(nodes);
+        Node root = tree.buildTree(nodes);
 
         System.out.println("Pre-order Traversal (DFS): ");
         tree.preOrder(root);

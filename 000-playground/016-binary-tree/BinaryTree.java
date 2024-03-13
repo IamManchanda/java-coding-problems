@@ -7,14 +7,14 @@ import java.util.*;
 public class BinaryTree {
     static int idx = -1;
 
-    public BinaryTreeNode buildTree(int[] nodes) {
+    public Node buildTree(int[] nodes) {
         idx++;
 
         if (nodes[idx] == -1) {
             return null;
         }
 
-        BinaryTreeNode newNode = new BinaryTreeNode(nodes[idx]);
+        Node newNode = new Node(nodes[idx]);
 
         newNode.left = buildTree(nodes);
         newNode.right = buildTree(nodes);
@@ -22,7 +22,7 @@ public class BinaryTree {
         return newNode;
     }
 
-    public void preOrder(BinaryTreeNode root) {
+    public void preOrder(Node root) {
         if (root == null) {
             return;
         }
@@ -32,7 +32,7 @@ public class BinaryTree {
         preOrder(root.right);
     }
 
-    public void inOrder(BinaryTreeNode root) {
+    public void inOrder(Node root) {
         if (root == null) {
             return;
         }
@@ -42,7 +42,7 @@ public class BinaryTree {
         inOrder(root.right);
     }
 
-    public void postOrder(BinaryTreeNode root) {
+    public void postOrder(Node root) {
         if (root == null) {
             return;
         }
@@ -52,17 +52,17 @@ public class BinaryTree {
         System.out.print(root.data + " ");
     }
 
-    public void levelOrder(BinaryTreeNode root) {
+    public void levelOrder(Node root) {
         if (root == null) {
             return;
         }
 
-        Queue<BinaryTreeNode> q = new LinkedList<>();
+        Queue<Node> q = new LinkedList<>();
         q.add(root);
         q.add(null);
 
         while (!q.isEmpty()) {
-            BinaryTreeNode currentNode = q.poll();
+            Node currentNode = q.poll();
 
             if (currentNode == null) {
                 System.out.println();
