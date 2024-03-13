@@ -37,8 +37,8 @@ public class Main {
 
         // Solution
         Solution solution = new Solution();
-        TreeNode invertedTree = solution.invertTree(rootNode);
-        List<Integer> result = helper.levelOrder(invertedTree);
+        TreeNode resultTree = solution.invertTree(rootNode);
+        List<Integer> result = helper.levelOrder(resultTree);
 
         // Output
         System.out.println();
