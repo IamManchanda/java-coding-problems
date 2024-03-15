@@ -19,7 +19,7 @@ cd java-coding-problems
 3. Change to problem's solution directory, example
 
 ```bash
-cd 001-sum-two-integers/solution
+cd 015-print-square-pattern/solution
 ```
 
 4. Allow Permission for bash script
