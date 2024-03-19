@@ -1,3 +1,7 @@
+Data Structures
+1. Red Black Trees
+
+Coding Problems:
 1. The Knight’s tour problem
 https://www.geeksforgeeks.org/the-knights-tour-problem/
 
@@ -63,3 +67,15 @@ https://leetcode.com/problems/find-duplicate-subtrees/description/
 
 22. Maximum Path Sum in a Binary Tree
 https://leetcode.com/problems/binary-tree-maximum-path-sum/description/
+
+23. Find the Closest Element in BST
+https://www.geeksforgeeks.org/problems/find-the-closest-element-in-bst/1
+
+24. Find k-th smallest element in BST
+https://www.geeksforgeeks.org/problems/find-k-th-smallest-element-in-bst/1
+
+25. Brothers From Different Roots
+https://www.geeksforgeeks.org/problems/brothers-from-different-root/1
+
+26. Maximum Sum BST in Binary Tree
+https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/description/
