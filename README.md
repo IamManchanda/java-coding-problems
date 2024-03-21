@@ -1,6 +1,6 @@
 # [WIP] Java Coding (DSA) Problems
 
-This repository contains solutions to various coding problems in Java. The problems are taken from various sources like LeetCode, AlgoExpert, Geeks for Geeks, etc. This repository contains dsa problems from basic summation of two integers to complex problems like Largest Rectangle in Histogram and Kth Ancestor in a Tree.
+This repository contains solutions to various coding problems in Java. The problems are taken from various sources like LeetCode, AlgoExpert, Geeks for Geeks, etc. This repository contains dsa problems from basic printing a square pattern to complex problems like Largest Rectangle in Histogram and Kth Ancestor in a Tree.
 
 ## Usage
 
