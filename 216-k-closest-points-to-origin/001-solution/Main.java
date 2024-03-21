@@ -13,7 +13,7 @@ public class Main {
         int[][] points = new int[n][2];
 
         if (n == 0) {
-            System.out.println("Entered `points[]` is empty");
+            System.out.println("Entered `points[][]` is empty");
         } else {
             for (int i = 0; i < n; i++) {
                 System.out.println();
