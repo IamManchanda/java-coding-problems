@@ -41,41 +41,38 @@ https://www.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1
 13. Reverse First K elements of Queue
 https://www.geeksforgeeks.org/problems/reverse-first-k-elements-of-queue/1
 
-14. Maximum of all subarrays of size k
-https://www.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k3101/1
-
-15. Maximum Balanced String Partitions
+14. Maximum Balanced String Partitions
 https://www.geeksforgeeks.org/maximum-balanced-string-partitions/
 
-16. Kth largest odd number in a given range
+15. Kth largest odd number in a given range
 https://www.geeksforgeeks.org/kth-largest-odd-number-in-a-given-range/
 
-17. Lexicographically smallest string of length N and sum K
+16. Lexicographically smallest string of length N and sum K
 https://www.geeksforgeeks.org/lexicographically-smallest-string-of-length-n-and-sum-k/
 
-18. Best Time to Buy and Sell Stock
+17. Best Time to Buy and Sell Stock
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
 
-19. Check if a Binary Tree is uni-valued or not
+18. Check if a Binary Tree is uni-valued or not
 https://leetcode.com/problems/univalued-binary-tree/description/
 
-20. Delete leaf nodes with values as x
+19. Delete leaf nodes with values as x
 https://www.geeksforgeeks.org/delete-leaf-nodes-value-x/
 
-21. Find All Duplicate Subtrees
+20. Find All Duplicate Subtrees
 https://leetcode.com/problems/find-duplicate-subtrees/description/
 
-22. Maximum Path Sum in a Binary Tree
+21. Maximum Path Sum in a Binary Tree
 https://leetcode.com/problems/binary-tree-maximum-path-sum/description/
 
-23. Find the Closest Element in BST
+22. Find the Closest Element in BST
 https://www.geeksforgeeks.org/problems/find-the-closest-element-in-bst/1
 
-24. Find k-th smallest element in BST
+23. Find k-th smallest element in BST
 https://www.geeksforgeeks.org/problems/find-k-th-smallest-element-in-bst/1
 
-25. Brothers From Different Roots
+24. Brothers From Different Roots
 https://www.geeksforgeeks.org/problems/brothers-from-different-root/1
 
-26. Maximum Sum BST in Binary Tree
+25. Maximum Sum BST in Binary Tree
 https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/description/
