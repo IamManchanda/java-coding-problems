@@ -76,3 +76,18 @@ https://www.geeksforgeeks.org/problems/brothers-from-different-root/1
 
 25. Maximum Sum BST in Binary Tree
 https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/description/
+
+26. K’th largest element in a stream
+https://leetcode.com/problems/kth-largest-element-in-a-stream/description/
+
+27. Minimum time required to fill given N slots
+https://www.geeksforgeeks.org/minimum-time-required-to-fill-given-n-slots/
+
+28. Path With Minimum Effort
+https://leetcode.com/problems/path-with-minimum-effort/description/
+
+29. Minimum Operations to Halve Array Sum
+https://leetcode.com/problems/minimum-operations-to-halve-array-sum/description/
+
+30. Merge K Sorted Linked List
+https://leetcode.com/problems/merge-k-sorted-lists/description/
