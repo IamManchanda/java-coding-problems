@@ -12,11 +12,12 @@ import java.util.*;
 public class Solution {
     public boolean isAnagram(String s, String t) {
         int sn = s.length(), tn = t.length();
-        Map<Character, Integer> countMap = new HashMap<>();
 
         if (sn != tn) {
             return false;
         }
+
+        Map<Character, Integer> countMap = new HashMap<>();
 
         for (int i = 0; i <= sn - 1; i++) { // sn == tn
             char sc = s.charAt(i);
@@ -28,8 +29,7 @@ public class Solution {
             countMap.put(tc, tcv - 1);
         }
 
-        Collection<Integer> countMapValues = countMap.values();
-        for (int v : countMapValues) {
+        for (int v : countMap.values()) {
             if (v != 0) {
                 return false;
             }
