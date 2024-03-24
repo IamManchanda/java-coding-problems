@@ -1,10 +1,10 @@
 import java.util.*;
 
 /**
- * Custom Hashmap implementation.
+ * Custom HashMap implementation.
  */
 
-public class CustomHashmap<K, V> {
+public class CustomHashMap<K, V> {
     private class Node {
         K key;
         V value;
@@ -22,7 +22,7 @@ public class CustomHashmap<K, V> {
     private LinkedList<Node>[] buckets;
 
     @SuppressWarnings("unchecked")
-    public CustomHashmap() {
+    public CustomHashMap() {
         this.n = 4;
         this.N = 4;
         this.buckets = new LinkedList[4];

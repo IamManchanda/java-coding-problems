@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        CustomHashmap<String, Integer> hm = new CustomHashmap<>();
+        CustomHashMap<String, Integer> hm = new CustomHashMap<>();
         hm.put("India", 100);
         hm.put("China", 150);
         hm.put("US", 50);
