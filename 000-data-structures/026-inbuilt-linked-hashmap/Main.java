@@ -6,12 +6,12 @@ public class Main {
         hm.put("India", 100);
         hm.put("China", 150);
         hm.put("US", 50);
-        System.out.println(hm);
+        System.out.println("HashMap: " + hm);
 
         Map<String, Integer> lhm = new LinkedHashMap<>();
         lhm.put("India", 100);
         lhm.put("China", 150);
         lhm.put("US", 50);
-        System.out.println(lhm);
+        System.out.println("LinkedHashMap: " + lhm);
     }
 }
