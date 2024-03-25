@@ -91,3 +91,12 @@ https://leetcode.com/problems/minimum-operations-to-halve-array-sum/description/
 
 30. Merge K Sorted Linked List
 https://leetcode.com/problems/merge-k-sorted-lists/description/
+
+31. Bottom View of a Binary Tree
+https://www.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1
+
+32. Sort Characters By Frequency
+https://leetcode.com/problems/sort-characters-by-frequency/description/
+
+33. LRU Cache
+https://leetcode.com/problems/lru-cache/description/
