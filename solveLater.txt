@@ -50,53 +50,50 @@ https://www.geeksforgeeks.org/kth-largest-odd-number-in-a-given-range/
 16. Lexicographically smallest string of length N and sum K
 https://www.geeksforgeeks.org/lexicographically-smallest-string-of-length-n-and-sum-k/
 
-17. Best Time to Buy and Sell Stock
-https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
-
-18. Check if a Binary Tree is uni-valued or not
+17. Check if a Binary Tree is uni-valued or not
 https://leetcode.com/problems/univalued-binary-tree/description/
 
-19. Delete leaf nodes with values as x
+18. Delete leaf nodes with values as x
 https://www.geeksforgeeks.org/delete-leaf-nodes-value-x/
 
-20. Find All Duplicate Subtrees
+19. Find All Duplicate Subtrees
 https://leetcode.com/problems/find-duplicate-subtrees/description/
 
-21. Maximum Path Sum in a Binary Tree
+20. Maximum Path Sum in a Binary Tree
 https://leetcode.com/problems/binary-tree-maximum-path-sum/description/
 
-22. Find the Closest Element in BST
+21. Find the Closest Element in BST
 https://www.geeksforgeeks.org/problems/find-the-closest-element-in-bst/1
 
-23. Find k-th smallest element in BST
+22. Find k-th smallest element in BST
 https://www.geeksforgeeks.org/problems/find-k-th-smallest-element-in-bst/1
 
-24. Brothers From Different Roots
+23. Brothers From Different Roots
 https://www.geeksforgeeks.org/problems/brothers-from-different-root/1
 
-25. Maximum Sum BST in Binary Tree
+24. Maximum Sum BST in Binary Tree
 https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/description/
 
-26. K’th largest element in a stream
+25. K’th largest element in a stream
 https://leetcode.com/problems/kth-largest-element-in-a-stream/description/
 
-27. Minimum time required to fill given N slots
+26. Minimum time required to fill given N slots
 https://www.geeksforgeeks.org/minimum-time-required-to-fill-given-n-slots/
 
-28. Path With Minimum Effort
+27. Path With Minimum Effort
 https://leetcode.com/problems/path-with-minimum-effort/description/
 
-29. Minimum Operations to Halve Array Sum
+28. Minimum Operations to Halve Array Sum
 https://leetcode.com/problems/minimum-operations-to-halve-array-sum/description/
 
-30. Merge K Sorted Linked List
+29. Merge K Sorted Linked List
 https://leetcode.com/problems/merge-k-sorted-lists/description/
 
-31. Bottom View of a Binary Tree
+30. Bottom View of a Binary Tree
 https://www.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1
 
-32. Sort Characters By Frequency
+31. Sort Characters By Frequency
 https://leetcode.com/problems/sort-characters-by-frequency/description/
 
-33. LRU Cache
+32. LRU Cache
 https://leetcode.com/problems/lru-cache/description/
