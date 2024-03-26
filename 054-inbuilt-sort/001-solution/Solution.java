@@ -1,7 +1,7 @@
 import java.util.*;
 
 /**
- * Insertion Sort (Inbuilt)
+ * Inbuilt sort
  * 
  * Time Complexity: O(n log n)
  * Space Complexity: O(n)
