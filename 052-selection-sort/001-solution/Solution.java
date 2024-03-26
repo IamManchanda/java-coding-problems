@@ -7,20 +7,42 @@
 
 public class Solution {
     public int[] selectionSort(int[] numbers, boolean isDescending) {
+        return isDescending
+                ? selectionSortDescending(numbers)
+                : selectionSortAscending(numbers);
+    }
+
+    private int[] selectionSortAscending(int[] numbers) {
         int n = numbers.length;
 
         for (int i = 0; i <= n - 2; i++) {
             int minPos = i;
 
             for (int j = i + 1; j <= n - 1; j++) {
-                if (isDescending
-                        ? numbers[minPos] < numbers[j]
-                        : numbers[minPos] > numbers[j]) {
+                if (numbers[minPos] > numbers[j]) {
                     minPos = j;
                 }
             }
 
             swap(numbers, i, minPos);
+        }
+
+        return numbers;
+    }
+
+    private int[] selectionSortDescending(int[] numbers) {
+        int n = numbers.length;
+
+        for (int i = 0; i <= n - 2; i++) {
+            int maxPos = i;
+
+            for (int j = i + 1; j <= n - 1; j++) {
+                if (numbers[maxPos] < numbers[j]) {
+                    maxPos = j;
+                }
+            }
+
+            swap(numbers, i, maxPos);
         }
 
         return numbers;
@@ -33,20 +55,7 @@ public class Solution {
     }
 }
 
-/*
- * Enter number of items:
- * 5
- * 
- * Enter items:
- * Enter item 1: 5
- * Enter item 2: 4
- * Enter item 3: 1
- * Enter item 4: 3
- * Enter item 5: 2
- * 
- * Enter the sorting order (1 for ASC, 2 for DESC):
- * 1
- * 
+/**
  * Sorting order: ASC
  * 
  * Original Input (as an array):
@@ -56,20 +65,7 @@ public class Solution {
  * [1, 2, 3, 4, 5]
  */
 
-/*
- * Enter number of items:
- * 5
- * 
- * Enter items:
- * Enter item 1: 5
- * Enter item 2: 4
- * Enter item 3: 1
- * Enter item 4: 3
- * Enter item 5: 2
- * 
- * Enter the sorting order (1 for ASC, 2 for DESC):
- * 2
- * 
+/**
  * Sorting order: DESC
  * 
  * Original Input (as an array):
