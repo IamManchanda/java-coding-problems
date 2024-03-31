@@ -76,9 +76,6 @@ public class Solution {
  * Entered `arr[]`:
  * [zebra, dog, duck, dove]
  * 
- * Entered `N`:
- * 4
- * 
  * Result:
  * [dog, dov, du, z]
  */

@@ -26,10 +26,6 @@ public class Main {
         System.out.println("Entered `arr[]`: ");
         System.out.println(Arrays.toString(arr));
 
-        System.out.println();
-        System.out.println("Entered `N`: ");
-        System.out.println(N);
-
         // Solution
         Solution solution = new Solution();
         String[] result = solution.findPrefixes(arr, N);
