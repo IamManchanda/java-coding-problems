@@ -97,3 +97,9 @@ https://leetcode.com/problems/sort-characters-by-frequency/description/
 
 32. LRU Cache
 https://leetcode.com/problems/lru-cache/description/
+
+33. Group Anagrams
+https://leetcode.com/problems/group-anagrams/description/
+
+34. Longest Word in Dictionary
+https://leetcode.com/problems/longest-word-in-dictionary/description/
