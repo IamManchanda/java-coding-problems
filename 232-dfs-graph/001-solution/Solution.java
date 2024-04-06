@@ -1,15 +1,20 @@
 import java.util.*;
 
 /**
- * Depth First Search (DFS) on a graph using recursion
+ * Depth First Search (DFS) on a graph using recursion (connected/unconnected).
  */
 
 public class Solution {
     public List<Integer> dfs(List<Edge>[] graph) {
-        boolean[] visited = new boolean[graph.length];
+        int n = graph.length;
         List<Integer> result = new ArrayList<>();
+        boolean[] visited = new boolean[n];
 
-        dfs(graph, 0, visited, result);
+        for (int i = 0; i < n; i++) {
+            if (!visited[i]) {
+                dfs(graph, i, visited, result);
+            }
+        }
 
         return result;
     }

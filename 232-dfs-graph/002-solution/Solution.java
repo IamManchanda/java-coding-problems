@@ -1,29 +1,33 @@
 import java.util.*;
 
 /**
- * Depth First Search (DFS) on a graph using stack
+ * Depth First Search (DFS) on a graph using stack (connected/unconnected).
  */
 
 public class Solution {
     public List<Integer> dfs(List<Edge>[] graph) {
+        int n = graph.length;
         List<Integer> result = new ArrayList<>();
-        boolean[] visited = new boolean[graph.length];
+        boolean[] visited = new boolean[n];
         Stack<Integer> stack = new Stack<>();
-        int current = 0;
 
-        stack.push(current);
+        for (int i = 0; i < n; i++) {
+            if (!visited[i]) {
+                stack.push(i);
 
-        while (!stack.isEmpty()) {
-            current = stack.pop();
+                while (!stack.isEmpty()) {
+                    int current = stack.pop();
 
-            if (!visited[current]) {
-                result.add(current);
-                visited[current] = true;
-            }
+                    if (!visited[current]) {
+                        result.add(current);
+                        visited[current] = true;
+                    }
 
-            for (Edge edge : graph[current]) {
-                if (!visited[edge.dest]) {
-                    stack.push(edge.dest);
+                    for (Edge edge : graph[current]) {
+                        if (!visited[edge.dest]) {
+                            stack.push(edge.dest);
+                        }
+                    }
                 }
             }
         }

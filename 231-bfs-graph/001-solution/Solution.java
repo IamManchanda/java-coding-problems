@@ -1,14 +1,27 @@
 import java.util.*;
 
 /**
- * Breadth First Search (BFS) on a graph
+ * Breadth First Search (BFS) on a graph (connected/unconnected).
  */
 
 public class Solution {
     public List<Integer> bfs(List<Edge>[] graph) {
+        int n = graph.length;
         List<Integer> result = new ArrayList<>();
+        boolean[] visited = new boolean[n];
+
+        for (int i = 0; i < n; i++) {
+            if (!visited[i]) {
+                bfs(graph, visited, result);
+            }
+        }
+
+        return result;
+    }
+
+    private void bfs(List<Edge>[] graph, boolean[] visited, List<Integer> result) {
         Queue<Integer> q = new LinkedList<>();
-        boolean[] visited = new boolean[graph.length];
+
         q.add(0);
 
         while (!q.isEmpty()) {
@@ -25,8 +38,6 @@ public class Solution {
                 }
             }
         }
-
-        return result;
     }
 }
 
