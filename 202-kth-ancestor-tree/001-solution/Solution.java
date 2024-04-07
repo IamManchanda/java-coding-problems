@@ -2,7 +2,7 @@
  * Kth Ancestor in a Tree
  * https://www.geeksforgeeks.org/problems/kth-ancestor-in-a-tree/1
  * 
- * Approach: Hash Table (int[]) + Recursion (DFS)
+ * Approach: Table (int[]) + Recursion (DFS)
  * - Time Complexity: O(n)
  * - Space Complexity: O(n)
  */

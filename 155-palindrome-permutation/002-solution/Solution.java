@@ -1,7 +1,7 @@
 /**
  * Palindrome Permutation
  * 
- * Approach: Hash Table (int[])
+ * Approach: Table (int[])
  * - Time complexity: O(n)
  * - Space complexity: O(1)
  */

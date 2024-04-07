@@ -4,7 +4,7 @@ import java.util.*;
  * First non-repeating character in a stream
  * https://www.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1
  * 
- * Approach: Hash Table (int[26]) and Queue (LinkedList)
+ * Approach: Table (int[]) and Queue (LinkedList)
  * - Time complexity: O(n)
  * - Space complexity: O(n)
  */

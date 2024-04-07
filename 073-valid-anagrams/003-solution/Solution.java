@@ -2,7 +2,7 @@
  * Valid Anagrams
  * https://leetcode.com/problems/valid-anagram/description/
  * 
- * Approach: Hash Table (int[]) without Unicode characters
+ * Approach: Table (int[]) without Unicode characters
  * - Time complexity: O(n)
  * - Space complexity: O(1)
  */
