@@ -1,8 +1,8 @@
 /**
  * Fibonacci sequence
- * Approach: Iterative
+ * Approach: Dynamic Programming (Iterative / Bottom-up / Tabulation)
  * - Time complexity: O(n)
- * - Space complexity: O(1)
+ * - Space complexity: O(n)
  */
 
 public class Solution {
@@ -11,16 +11,16 @@ public class Solution {
             return n;
         }
 
-        int curr = 0;
-        int next = 1;
+        int[] f = new int[n + 1];
+
+        f[0] = 0;
+        f[1] = 1;
 
         for (int i = 2; i <= n; i++) {
-            int sum = curr + next;
-            curr = next;
-            next = sum;
+            f[i] = f[i - 1] + f[i - 2];
         }
 
-        return next;
+        return f[n];
     }
 }
 
