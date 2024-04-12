@@ -6,9 +6,11 @@ import java.util.*;
  * 
  * Approach: Dynamic Programming (Iterative / Bottom-up / Tabulation)
  * - Time complexity: O(nW)
- * - Space complexity: O(nW)
+ * - Space complexity: O(W)
  * where, n is the number of items
  * and, W is the maximum weight
+ * 
+ * Note: This solution is optimized in terms of space complexity.
  */
 
 public class Solution {
@@ -17,36 +19,26 @@ public class Solution {
             return 0;
         }
 
-        int[][] dp = new int[N + 1][W + 1];
-        fill(dp, 0); // can be omitted, default value is 0
+        int[] dp = new int[W + 1];
+        Arrays.fill(dp, 0); // can be omitted, default value is 0
 
         for (int i = 1; i <= N; i++) {
             int pi = i - 1;
 
             for (int j = 1; j <= W; j++) {
                 int v = val[pi], w = wt[pi],
-                        includeProfit, excludeProfit = dp[pi][j];
+                        includeProfit, excludeProfit = dp[j];
 
                 if (w <= j) {
-                    // dp[i] instead of dp[pi] because we may
-                    // want to include the same item again
-                    includeProfit = v + dp[i][j - w];
-
-                    dp[i][j] = Math.max(includeProfit, excludeProfit);
+                    includeProfit = v + dp[j - w];
+                    dp[j] = Math.max(includeProfit, excludeProfit);
                 } else { // w > j
-                    dp[i][j] = excludeProfit;
+                    dp[j] = excludeProfit;
                 }
             }
         }
 
-        return dp[N][W];
-    }
-
-    private void fill(int[][] dp, int value) {
-        // fills every item in the first row and first column
-        // of the 2D array with the given value
-        Arrays.fill(dp[0], value); // fills first row
-        Arrays.stream(dp).forEach(row -> row[0] = value); // fills first column
+        return dp[W];
     }
 }
 
