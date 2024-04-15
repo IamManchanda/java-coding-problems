@@ -33,13 +33,13 @@ public class Solution {
         int result = 0;
 
         for (int i = 1; i <= n; i++) {
-            int li1 = i - 1;
+            int li = i - 1;
 
             for (int j = 1; j <= m; j++) {
-                int li2 = j - 1;
+                int lj = j - 1;
 
-                if (c1[li1] == c2[li2]) {
-                    dp[i][j] = dp[li1][li2] + 1;
+                if (c1[li] == c2[lj]) {
+                    dp[i][j] = dp[li][lj] + 1;
                     result = Math.max(result, dp[i][j]);
                 } else {
                     dp[i][j] = 0;
