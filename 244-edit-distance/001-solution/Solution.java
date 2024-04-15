@@ -33,17 +33,17 @@ public class Solution {
         }
 
         for (int i = 1; i <= n1; i++) {
-            int li1 = i - 1;
+            int li = i - 1;
 
             for (int j = 1; j <= n2; j++) {
-                int li2 = j - 1;
+                int lj = j - 1;
 
-                if (c1[li1] == c2[li2]) {
-                    dp[i][j] = dp[li1][li2];
+                if (c1[li] == c2[lj]) {
+                    dp[i][j] = dp[li][lj];
                 } else {
-                    int insert = dp[i][li2] + 1;
-                    int delete = dp[li1][j] + 1;
-                    int replace = dp[li1][li2] + 1;
+                    int insert = dp[i][lj] + 1;
+                    int delete = dp[li][j] + 1;
+                    int replace = dp[li][lj] + 1;
 
                     dp[i][j] = min(insert, delete, replace);
                 }
