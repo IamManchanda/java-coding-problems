@@ -1,7 +1,7 @@
 import java.util.*;
 
 /**
- * Has Cycle in a Graph using Depth First Search (DFS).
+ * Has Cycle in an Undirected Graph using Depth First Search (DFS).
  */
 
 public class Solution {
