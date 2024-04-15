@@ -33,15 +33,15 @@ public class Solution {
         fill(dp, 0); // can be omitted, default value is 0
 
         for (int i = 1; i <= n1; i++) {
-            int li1 = i - 1;
+            int li = i - 1;
 
             for (int j = 1; j <= n2; j++) {
-                int li2 = j - 1;
+                int lj = j - 1;
 
-                if (c1[li1] == c2[li2]) {
-                    dp[i][j] = dp[li1][li2] + 1;
+                if (c1[li] == c2[lj]) {
+                    dp[i][j] = dp[li][lj] + 1;
                 } else {
-                    dp[i][j] = Math.max(dp[li1][j], dp[i][li2]);
+                    dp[i][j] = Math.max(dp[li][j], dp[i][lj]);
                 }
             }
         }

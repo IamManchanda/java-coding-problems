@@ -26,13 +26,13 @@ public class Solution {
             return 0;
         }
 
-        int li1 = n1 - 1, li2 = n2 - 1, result;
+        int ln1 = n1 - 1, ln2 = n2 - 1, result;
 
-        if (text1.charAt(li1) == text2.charAt(li2)) {
-            result = longestCommonSubsequence(text1, text2, li1, li2) + 1;
+        if (text1.charAt(ln1) == text2.charAt(ln2)) {
+            result = longestCommonSubsequence(text1, text2, ln1, ln2) + 1;
         } else {
-            int lcs1 = longestCommonSubsequence(text1, text2, li1, n2);
-            int lcs2 = longestCommonSubsequence(text1, text2, n1, li2);
+            int lcs1 = longestCommonSubsequence(text1, text2, ln1, n2);
+            int lcs2 = longestCommonSubsequence(text1, text2, n1, ln2);
             result = Math.max(lcs1, lcs2);
         }
 
