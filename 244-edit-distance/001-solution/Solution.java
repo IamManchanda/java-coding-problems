@@ -5,6 +5,8 @@
  * Approach: Dynamic Programming (Iterative / Bottom-up / Tabulation)
  * - Time complexity: O(n1 * n2)
  * - Space complexity: O(n1 * n2)
+ * where, n1 is the length of the string `word1`
+ * and, n2 is the length of the string `word2`
  */
 
 public class Solution {
