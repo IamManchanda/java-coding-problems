@@ -1,37 +1,26 @@
 /**
  * Fibonacci sequence
- * Approach: Dynamic Programming (Recursive / Top-down / Memoization)
+ * Approach: Iterative
  * - Time complexity: O(n)
- * - Space complexity: O(n)
+ * - Space complexity: O(1)
  */
 
 public class Solution {
     public int fib(int n) {
-        if (isZeroOrOne(n)) {
+        if (n == 0 || n == 1) {
             return n;
         }
 
-        int[] f = new int[n + 1];
+        int curr = 0;
+        int next = 1;
 
-        return fib(n, f);
-    }
-
-    private int fib(int n, int[] f) {
-        if (isZeroOrOne(n)) {
-            return n;
+        for (int i = 2; i <= n; i++) {
+            int sum = curr + next;
+            curr = next;
+            next = sum;
         }
 
-        if (f[n] != 0) {
-            return f[n];
-        }
-
-        f[n] = fib(n - 1, f) + fib(n - 2, f);
-
-        return f[n];
-    }
-
-    private boolean isZeroOrOne(int n) {
-        return n == 0 || n == 1;
+        return next;
     }
 }
 
