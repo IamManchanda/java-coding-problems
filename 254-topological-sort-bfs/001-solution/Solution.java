@@ -3,7 +3,7 @@ import java.util.*;
 /**
  * Topological sort using BFS.
  * 
- * Approach: Using in-degree array.
+ * Approach: Using Kahn's algorithm (in-degree array and queue).
  * - Time complexity: O(V + E)
  * - Space complexity: O(V)
  */
