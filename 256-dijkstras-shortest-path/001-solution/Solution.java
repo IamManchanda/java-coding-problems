@@ -1,7 +1,7 @@
 import java.util.*;
 
 /**
- * Dijkstra's Shortest Path algorithm.
+ * Dijkstra's shortest path algorithm.
  * 
  * Approach: Greedy + BFS + Priority Queue (Min Heap)
  * - Time Complexity: O((V + E) log V)
