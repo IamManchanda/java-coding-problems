@@ -10,8 +10,7 @@ import java.util.*;
 
 public class Solution {
     public int mst(List<Edge>[] graph) {
-        int finalCost = 0,
-                V = graph.length;
+        int finalCost = 0, V = graph.length;
         boolean[] vis = new boolean[V];
         PriorityQueue<Pair> pq = new PriorityQueue<>();
 
