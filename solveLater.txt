@@ -160,3 +160,24 @@ https://www.geeksforgeeks.org/find-length-largest-region-boolean-matrix/
 51. Word Ladder
 https://leetcode.com/problems/word-ladder/description/
 
+52. Tarjan’s Algorithm
+https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/
+
+53. Floyd Warshall Algorithm
+https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/
+
+54. Mother Vertex
+https://www.geeksforgeeks.org/problems/mother-vertex/1
+
+55. Detect cycle using DSU
+https://www.geeksforgeeks.org/problems/detect-cycle-using-dsu/1
+
+56. Course Schedule
+https://leetcode.com/problems/course-schedule/description/
+
+57. Alien Dictionary
+https://www.geeksforgeeks.org/problems/alien-dictionary/1
+
+58. Number of Closed Islands
+https://leetcode.com/problems/number-of-closed-islands/description/
+
