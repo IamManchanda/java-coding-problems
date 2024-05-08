@@ -11,12 +11,11 @@ import java.util.*;
 public class Solution {
     public List<List<Integer>> findScc(int n, List<List<Integer>> graph) {
         List<List<Integer>> result = new ArrayList<>();
-
-        int[] vis = new int[n];
+        boolean[] vis = new boolean[n];
         Stack<Integer> s = new Stack<>();
 
         for (int i = 0; i < n; i++) {
-            if (vis[i] == 0) {
+            if (!vis[i]) {
                 dfs(i, vis, graph, s);
             }
         }
@@ -28,7 +27,7 @@ public class Solution {
         }
 
         for (int i = 0; i < n; i++) {
-            vis[i] = 0;
+            vis[i] = false;
             for (int it : graph.get(i)) {
                 reversedGraph.get(it).add(i);
             }
@@ -37,7 +36,7 @@ public class Solution {
         while (!s.isEmpty()) {
             int curr = s.pop();
 
-            if (vis[curr] == 0) {
+            if (!vis[curr]) {
                 List<Integer> component = new ArrayList<>();
                 dfsReversed(curr, vis, reversedGraph, component);
                 result.add(component);
@@ -47,12 +46,12 @@ public class Solution {
         return result;
     }
 
-    private void dfs(int node, int[] vis, List<List<Integer>> graph,
+    private void dfs(int node, boolean[] vis, List<List<Integer>> graph,
             Stack<Integer> s) {
-        vis[node] = 1;
+        vis[node] = true;
 
         for (int it : graph.get(node)) {
-            if (vis[it] == 0) {
+            if (!vis[it]) {
                 dfs(it, vis, graph, s);
             }
         }
@@ -60,13 +59,13 @@ public class Solution {
         s.push(node);
     }
 
-    private void dfsReversed(int node, int[] vis, List<List<Integer>> reversedGraph,
+    private void dfsReversed(int node, boolean[] vis, List<List<Integer>> reversedGraph,
             List<Integer> component) {
-        vis[node] = 1;
+        vis[node] = true;
         component.add(node);
 
         for (int it : reversedGraph.get(node)) {
-            if (vis[it] == 0) {
+            if (!vis[it]) {
                 dfsReversed(it, vis, reversedGraph, component);
             }
         }
