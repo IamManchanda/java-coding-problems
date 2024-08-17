@@ -19,7 +19,7 @@ cd java-coding-problems
 3. Change to problem's solution directory, example
 
 ```bash
-cd 015-print-square-pattern/solution
+cd 015-print-square-pattern/001-solution
 ```
 
 4. Allow Permission for bash script
